@@ -1,0 +1,395 @@
+.useable-button {
+  border-radius: 50px;
+  font-size: 25px;
+  background-color: #2d3663;
+  position: relative;
+  overflow: hidden;
+  z-index: 999; }
+  .useable-button .button-icon {
+    color: white; }
+
+.useable-button:hover .button-icon {
+  color: black !important;
+  z-index: 100;
+  position: relative; }
+
+.useable-button:hover span {
+  position: relative;
+  z-index: 100; }
+
+.useable-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  background-color: white;
+  transition: transform 300ms ease-in-out;
+  transform: scale(0);
+  transform-origin: center; }
+
+.useable-button:hover:before {
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  border: none !important; }
+
+li {
+  list-style: none; }
+
+.main-section {
+  height: 650px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem; }
+  .main-section .header-section .slider {
+    top: -20%;
+    z-index: -2; }
+    .main-section .header-section .slider .carousel-inner .carousel-item img {
+      height: 650px; }
+    .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 1.25rem;
+      left: 15%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: #fff;
+      text-align: center;
+      top: 30%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 400;
+      color: black; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption h2 {
+        font-family: sans-serif;
+        font-size: 50px;
+        margin-bottom: 2rem; }
+        .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption h2 span {
+          color: aqua;
+          margin-left: 1rem; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption p {
+        font-family: sans-serif;
+        margin-bottom: 2rem;
+        width: 50%;
+        position: relative;
+        left: 24%; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button:last-child {
+        background-color: aqua !important; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button {
+        border-radius: 50px;
+        font-size: 25px;
+        background-color: #2d3663;
+        position: relative;
+        overflow: hidden;
+        z-index: 999;
+        border: none !important; }
+        .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button .slide-inner-button-icon {
+          color: white; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button:hover .slide-inner-button-icon {
+        color: black !important;
+        z-index: 100;
+        position: relative; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button:hover span {
+        position: relative;
+        z-index: 100; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        text-align: center;
+        background-color: white;
+        transition: transform 300ms ease-in-out;
+        transform: scale(0);
+        transform-origin: center; }
+      .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption .slide-inner-button:hover:before {
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        border: none !important; }
+    .main-section .header-section .slider .social-icons {
+      top: 30%;
+      z-index: 100;
+      left: 4%;
+      height: 60%;
+      position: absolute;
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 15%; }
+      .main-section .header-section .slider .social-icons .carousel-social-icon {
+        color: #0c0a0a;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 0.5);
+        scale: 1; }
+      .main-section .header-section .slider .social-icons .carousel-social-icon:hover {
+        background-color: #2d3663;
+        color: white;
+        cursor: pointer;
+        transform: scale(1.1); }
+      .main-section .header-section .slider .social-icons .carousel-social-icon::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        height: 175%;
+        left: 45% !important;
+        z-index: 110;
+        color: #2d3663;
+        width: 2px;
+        background-color: #161515; }
+      .main-section .header-section .slider .social-icons .carousel-social-icon:last-child::before {
+        display: none !important; }
+    .main-section .header-section .slider .carousel-indicators {
+      position: absolute;
+      right: 0;
+      z-index: 1001;
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 5.8%;
+      padding: 0;
+      margin-right: 5% !important;
+      margin-bottom: 1rem;
+      top: 30%;
+      left: 80%;
+      height: 60%; }
+      .main-section .header-section .slider .carousel-indicators [data-bs-target] {
+        background-color: rgba(231, 226, 226, 0.007) !important; }
+      .main-section .header-section .slider .carousel-indicators .indicators {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 141%; }
+      .main-section .header-section .slider .carousel-indicators .indicators::before {
+        content: "";
+        height: 275%;
+        z-index: 110;
+        color: #2d3663;
+        width: 2px;
+        position: absolute;
+        right: 46%;
+        background-color: black;
+        top: 100%; }
+      .main-section .header-section .slider .carousel-indicators .indicators:last-child::before {
+        display: none !important; }
+      .main-section .header-section .slider .carousel-indicators .active::after {
+        content: "";
+        position: relative;
+        z-index: 100;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        color: blue;
+        background-color: #2d3663;
+        right: 5%;
+        display: flex;
+        top: 37%;
+        left: 33%; }
+  .main-section .header-section .row .col .offcanvas-body .nav-options {
+    display: flex !important;
+    flex-direction: column !important; }
+    .main-section .header-section .row .col .offcanvas-body .nav-options li {
+      cursor: pointer; }
+    .main-section .header-section .row .col .offcanvas-body .nav-options li:hover {
+      color: green; }
+  .main-section .header-section .row i {
+    font-size: 25px; }
+  .main-section .nav-row {
+    border-bottom: 1px dashed blueviolet; }
+  .main-section .row {
+    padding-top: 5px; }
+    .main-section .row p span {
+      color: blue; }
+    .main-section .row .top-ul {
+      border-bottom: none;
+      display: grid;
+      grid-template-columns: auto auto auto; }
+      .main-section .row .top-ul li i {
+        color: black; }
+    .main-section .row .top-bar-icon {
+      background-color: #93daf7;
+      color: white;
+      border-radius: 50%;
+      height: 30px !important;
+      width: 30px !important; }
+  .main-section .categories-section {
+    position: relative;
+    top: 0; }
+
+.categories-section {
+  min-height: 350px;
+  position: relative;
+  z-index: 200;
+  margin-top: 1rem;
+  top: 0; }
+  .categories-section .cards-section {
+    min-height: 400px;
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    left: 8%; }
+    .categories-section .cards-section .left-card {
+      min-height: 400px;
+      margin-right: 2%;
+      background-color: #47ccc8;
+      border-radius: 10px; }
+      .categories-section .cards-section .left-card .card-text {
+        text-align: center; }
+    .categories-section .cards-section .right-card {
+      height: 400px;
+      background-color: #edf3f6;
+      border-radius: 10px; }
+      .categories-section .cards-section .right-card .right-card-body {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid: .2rem;
+        padding: 6% !important;
+        align-items: center; }
+        .categories-section .cards-section .right-card .right-card-body .item {
+          height: 130px;
+          width: 130px;
+          margin: 1%;
+          margin-bottom: 4%;
+          margin-top: 10%;
+          background-color: white;
+          text-align: center;
+          padding: 5%;
+          border-radius: 10px; }
+          .categories-section .cards-section .right-card .right-card-body .item a img {
+            height: 60%;
+            width: 50%;
+            padding-bottom: 2%;
+            opacity: 0.2; }
+          .categories-section .cards-section .right-card .right-card-body .item a .image {
+            filter: opacity(1.5) drop-shadow(1 1 #5ba52a); }
+        .categories-section .cards-section .right-card .right-card-body .item:hover {
+          background-color: #2d3663; }
+          .categories-section .cards-section .right-card .right-card-body .item:hover img {
+            opacity: 1; }
+          .categories-section .cards-section .right-card .right-card-body .item:hover p {
+            color: white; }
+
+.about-clinic-section .about-clinic-body .about-left .about-button {
+  background-color: #47ccc8 !important; }
+
+.about-clinic-section .about-clinic-body .about-left .useable-button::before {
+  background-color: #2d3663 !important; }
+
+.about-clinic-section .about-clinic-body .about-left .useable-button:hover span {
+  color: white !important; }
+
+.about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill {
+  height: 150px;
+  width: 150px;
+  position: relative; }
+  .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer {
+    height: 138px;
+    width: 138px;
+    box-shadow: 2px 2px 6px -0.5px rgba(0, 0, 0, 0.5), -2px -2px 6px -0.5px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 15px; }
+    .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner {
+      height: 108px;
+      width: 108px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0 rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+      border-radius: 50%; }
+      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number1, .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number2, .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number3 {
+        font-weight: 600;
+        color: black; }
+      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner .title_text {
+        font-size: 12px !important; }
+  .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill circle {
+    fill: none;
+    stroke: #47ccc8;
+    stroke-width: 12px;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    animation: cntanim 2s linear forwards; }
+  .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill #anim2 {
+    animation: anim2 2s linear forwards; }
+  .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill #anim3 {
+    animation: anim3 2s linear forwards; }
+  .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill svg {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+@keyframes cntanim {
+  100% {
+    stroke-dashoffset: 109.9; } }
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 78.5; } }
+
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 47.1; } }
+
+.quality-section {
+  padding-top: 2rem; }
+  .quality-section .quality-body {
+    height: 700px;
+    position: relative; }
+    .quality-section .quality-body .image-in-bg {
+      height: 700px;
+      width: 100%;
+      background: url(/assets/img/dims.healthgrades.jpg);
+      position: relative; }
+      .quality-section .quality-body .image-in-bg .quality-items {
+        width: 100%;
+        position: absolute;
+        background-color: whitesmoke;
+        bottom: -150px;
+        border-radius: 10px;
+        padding: 1%; }
+        .quality-section .quality-body .image-in-bg .quality-items .items-body {
+          align-items: center; }
+          .quality-section .quality-body .image-in-bg .quality-items .items-body .item {
+            position: relative;
+            padding: 2%; }
+            .quality-section .quality-body .image-in-bg .quality-items .items-body .item .item_text {
+              text-align: center; }
+              .quality-section .quality-body .image-in-bg .quality-items .items-body .item .item_text span {
+                font-size: 40px;
+                color: #47ccc8;
+                font-weight: 600; }
+              .quality-section .quality-body .image-in-bg .quality-items .items-body .item .item_text h6 {
+                font-weight: 700;
+                font-size: 20px; }
+
+.offer-section {
+  background-color: #2d3663;
+  height: 900px; }
+  .offer-section .offer-body {
+    padding-top: 200px; }
+    .offer-section .offer-body .title_text_area {
+      text-align: center; }
+      .offer-section .offer-body .title_text_area h6 {
+        color: white;
+        font-weight: 600; }
+      .offer-section .offer-body .title_text_area h2 {
+        color: #47ccc8;
+        font-weight: 700;
+        font-size: 35px; }
+      .offer-section .offer-body .title_text_area p {
+        color: lightcyan;
+        padding-left: 20% !important;
+        padding-right: 20% !important; }
