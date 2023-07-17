@@ -407,6 +407,7 @@ li{list-style: none;}
                             width: 50%;
                             padding-bottom: 2%;
                             opacity: 0.2;
+                            color: #47ccc8;
                           
                             
                         }
@@ -623,6 +624,65 @@ li{list-style: none;}
                 padding-left: 20% !important;
                 padding-right: 20% !important;
                
+            }
+        }
+        .offer_card_area{
+            .card{
+                position: relative;
+                .image{
+                    height: 10rem;
+                    background-color: #47ccc8;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    h3{
+                        color: #2d3663;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                    }
+                }
+                .icon-circle{
+                    height: 100px;
+                    width: 100px;
+                    position: absolute;
+                    top: 30%;
+                    left: 35%;
+                    background-color: white;
+                 
+                    border-radius: 50%;
+
+                    .outer{
+                        height: 100px;
+                        width: 100px;
+                        position: relative;
+                        border-radius: 50%;
+                        box-shadow: 2px 2px 5px 5px rgba(230, 228, 228, 0.952);
+                        padding: 5px;
+                        background-color:#2d3663;
+                       
+                        .inner{
+                            height: 90px;
+                            width: 90px;
+                            position: relative;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: white;
+                            box-shadow: 2px 2px 20px 5px rgba(20, 15, 15, 0.5),
+                            -2px -2px 20px 10px rgba(20, 15, 15, 0.5);
+                            img{
+                                height: 60%;
+                                width: 60%;
+                                padding: 5%;
+                                position: relative;
+                            }
+                        }
+                    }
+                    
+                        
+                    
+                }
             }
         }
     }
