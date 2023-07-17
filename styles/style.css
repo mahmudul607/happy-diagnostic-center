@@ -352,7 +352,7 @@ li {
     .quality-section .quality-body .image-in-bg {
       height: 700px;
       width: 100%;
-      background: url(/assets/img/dims.healthgrades.jpg);
+      background: url(../assets/img/dims.healthgrades.jpg);
       position: relative; }
       .quality-section .quality-body .image-in-bg .quality-items {
         width: 100%;
