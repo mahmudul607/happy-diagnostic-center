@@ -83,7 +83,7 @@ let= counter2 = 0;
 
 }
 
-// roundCircleCounter('number1', 65);
+roundCircleCounter('number1', 65);
 roundCircleCounter('number2', 75);
 roundCircleCounter('number3', 85);
 

@@ -367,7 +367,7 @@ li{list-style: none;}
         width: 100%;
         position: absolute;
         top: -100px;
-        left: 8%;
+        left: 10%;
       
         .left-card{
             min-height: 400px;
@@ -603,7 +603,7 @@ li{list-style: none;}
 
 .offer-section{
     background-color: #2d3663;
-    height: 900px;
+    height: 1100px;
     .offer-body{
         padding-top: 200px;
         .title_text_area{
@@ -645,7 +645,7 @@ li{list-style: none;}
                     height: 100px;
                     width: 100px;
                     position: absolute;
-                    top: 30%;
+                    top: 120px;
                     left: 35%;
                     background-color: white;
                  
@@ -683,7 +683,131 @@ li{list-style: none;}
                         
                     
                 }
+                .card-body{
+                    padding-top: 100px;
+                    text-align: center;
+
+                    .card-title{
+                        font-size: 40px;
+                        font-weight: 700;
+                        font-family: serif;
+                    }
+                    .card_text{
+                        p{
+                            color: #47ccc8;
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+
+                        ul{
+                            text-align: left;
+                            position: relative;
+                            left: 20%;
+                            font-family: sans-serif;
+                            li::before{
+                                content: "✔️";
+                            }
+                        }
+                        .offer-submit-btn{
+                            color: white;
+                            font-size: 15px;
+                            font-weight: 700;
+
+                        }
+                        .offer-submit-btn:hover{
+                            color: #2d3663;
+                        }
+                        .offer-submit-btn:hover::before{
+                            background-color: #47ccc8;
+                        }
+                    }
+                }
             }
         }
     }
+}
+
+.mri_details_section{
+    overflow: hidden;
+    padding-top: 5rem;
+    height: 900px;
+    .mri-inner-area{
+        .left_area{
+            height: 600px;
+            padding-top: 5rem !important;
+            padding-left: 4rem;
+            
+            .mri_details_text{
+                h2{
+                    color: #47ccc8;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 600;
+                    font-size: 35px;
+                }
+                h3{
+                    font-size: 35px;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 600;
+                    color: #2d3663;
+
+                }
+                p{
+                    color:darkgray;
+                    
+                }
+                
+            }
+            .mri-details-items{
+                grid-template-columns: auto auto;
+                grid-gap: 1rem;
+
+                .item{
+                    height: 200px;
+                    width: 300px;
+
+                    img{
+                        width: 40%;
+                        height: 40%;
+                        font-size: 10px !important;
+                        padding-right: 2rem;
+                        color: #47ccc8;
+                    }
+                    
+                }
+            }
+            
+        }
+
+
+
+        .right_area{
+            height: 600px;
+            padding-top: 5rem;
+            position: relative;
+            .mri_machine{
+                height: 600px;
+                width: 100%;
+                position: absolute;
+               img{
+                height: 90%;
+                width: 80%;
+                bottom: 10;
+                position: absolute;
+               }
+            }
+            .doctor{
+                height: 600px;
+                width: 100%;
+                position: absolute;
+                img{
+                    height: 100%;
+                width: 80%;
+                left: 20%;
+                top: -10%;
+                position: absolute;
+                }
+            }
+        }
+    }
+
 }
