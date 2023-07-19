@@ -1,3 +1,65 @@
+// Owl Carousel
+
+$(document).ready(function(){
+   $(".owl-carousel").owlCarousel();
+ });
+
+ $('.owl-carousel').owlCarousel({
+   loop:true,
+   margin:10,
+   nav:true,
+   responsive:{
+       0:{
+           items:1
+       },
+       600:{
+           items:3
+       },
+       1000:{
+           items:3
+       }
+   }
+})
+
+
+// panne code
+
+$(function() {
+ 
+   $(".slider").slick({
+     slidesToShow: 4,
+     slidesToScroll: 4,
+     arrows: true,
+   });
+   
+   $(".filter li").on('click', function(){
+     var filter = $(this).data('filter');
+     $(".slider").slick('slickUnfilter');
+     
+     if(filter == 'red'){
+       $(".slider").slick('slickFilter','.red');
+     }
+     else if(filter == 'yellow'){
+       $(".slider").slick('slickFilter','.yellow');
+     }
+     else if(filter == 'blue'){
+       $(".slider").slick('slickFilter','.blue');
+     }
+     else if(filter == 'all'){
+       
+       $(".slider").slick('slickUnfilter');
+     }
+     
+   })
+   
+ });
+ 
+
+//  end owl carousel
+
+
+
+
 // remove it before start new work
 
 const checkClicked = document.querySelector(".btn").addEventListener('click', () => {
@@ -90,3 +152,4 @@ roundCircleCounter('number3', 85);
 
 
 // .Circle 
+

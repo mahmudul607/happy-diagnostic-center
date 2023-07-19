@@ -49,6 +49,10 @@ li {
   .main-section .header-section .slider {
     top: -20%;
     z-index: -2; }
+    .main-section .header-section .slider .slick-track {
+      width: 100% !important; }
+      .main-section .header-section .slider .slick-track .carousel {
+        width: 100% !important; }
     .main-section .header-section .slider .carousel-inner .carousel-item img {
       height: 650px; }
     .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption {
@@ -492,7 +496,7 @@ li {
         height: 200px;
         width: 300px; }
         .mri_details_section .mri-inner-area .left_area .mri-details-items .item img {
-          width: 40%;
+          width: 50%;
           height: 40%;
           font-size: 10px !important;
           padding-right: 2rem;
@@ -520,3 +524,62 @@ li {
         left: 20%;
         top: -10%;
         position: absolute; }
+
+.tabs-section {
+  height: 600px; }
+  .tabs-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 1100px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; }
+    .tabs-section ul li {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border: solid 1px #ddd;
+      text-align: center;
+      font-size: 5em;
+      cursor: pointer; }
+    .tabs-section ul li.red {
+      background: red;
+      color: #fff; }
+    .tabs-section ul li.yellow {
+      background: yellow; }
+    .tabs-section ul li.blue {
+      background: blue;
+      color: #fff; }
+  .tabs-section ul.filter {
+    margin: 2em auto; }
+    .tabs-section ul.filter li {
+      padding: 12px;
+      font-size: 1em;
+      width: 25%;
+      float: left; }
+  .tabs-section .slider button {
+    border: none !important;
+    background: none !important;
+    color: white !important; }
+  .tabs-section .slider .slick-prev, .tabs-section .slider .slick-next {
+    position: absolute;
+    bottom: -20%;
+    padding-right: 2rem !important; }
+  .tabs-section .slider .slick-next {
+    left: 47% !important; }
+  .tabs-section .slider .slick-prev {
+    left: 48%; }
+  .tabs-section .slider .slick-prev::after {
+    content: "➜";
+    font-size: 40px;
+    top: 20%;
+    position: relative;
+    color: black !important;
+    border: 1px solid #47ccc8;
+    border-radius: 50%;
+    padding: 1%; }
+  .tabs-section .slider .slick-next::before {
+    content: "←";
+    font-size: 40px;
+    position: absolute;
+    color: black !important; }
