@@ -36,14 +36,18 @@ $(function() {
      var filter = $(this).data('filter');
      $(".slider").slick('slickUnfilter');
      
-     if(filter == 'red'){
-       $(".slider").slick('slickFilter','.red');
+     if(filter == 'cardiology'){
+       $(".slider").slick('slickFilter','.cardiology');
+       
      }
-     else if(filter == 'yellow'){
-       $(".slider").slick('slickFilter','.yellow');
+     else if(filter == 'neurosurgery'){
+       $(".slider").slick('slickFilter','.neurosurgery');
      }
-     else if(filter == 'blue'){
-       $(".slider").slick('slickFilter','.blue');
+     else if(filter == 'surgery'){
+       $(".slider").slick('slickFilter','.surgery');
+     }
+     else if(filter == 'urology'){
+       $(".slider").slick('slickFilter','.urology');
      }
      else if(filter == 'all'){
        

@@ -821,8 +821,43 @@ li{list-style: none;}
 
 }
 
+
 .tabs-section{
     height: 600px;
+   
+    .nav-tab-area{
+        .text_area{
+            text-align: center;
+            p{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        }
+        ul li{
+            border: none !important;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: solid 1px #ddd;
+            text-align: center;
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .tab_header{
+            ul.filter{
+                display: flex;
+                justify-content: center;
+            }
+            
+            
+            ul li {
+                padding: 12px;
+                font-size: 1em;
+                width: 10% !important;
+                text-align: center !important;
+            }
+        }
+
+    }
 
 
 
@@ -875,6 +910,7 @@ li{list-style: none;}
     
 
       .slider{
+        
         button{
             border: none !important;
             background: none !important;
@@ -893,24 +929,77 @@ li{list-style: none;}
         }
         .slick-prev {
             left: 48%;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+             border: 1px solid #47ccc8;
 
         }
         .slick-prev::after{
             content: "➜";
-            font-size: 40px;
-          top: 20%;
-            position: relative;
+            font-size: 30px;
+            position: absolute;
             color: black !important;
-            border: 1px solid #47ccc8;
-            border-radius: 50%;
+            top: 36px;
             padding: 1%;
   
         }
+        .slick-prev:hover::before{
+          content: "";
+            position: absolute;
+            top: 39px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: green;
+            left: 55px;
+            color: white;
+
+            
+  
+        }
+        .slick-prev::before{
+          content: "";
+            position: absolute;
+            top: 39px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+          border: 1px solid green;
+            left: 55px;
+
+            
+  
+        }
+        .slick-next:hover::after{
+         content: "";
+        position: absolute;
+        top: 25px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background-color: green;
+        left: -3px;
+        z-index: -1;
+}
+        .slick-next::after{
+         content: "";
+        position: absolute;
+        top: 25px;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border: 1px solid green;
+        left: -3px;
+        z-index: -1;
+}
         .slick-next::before{
-            content: "←";
-            font-size: 40px;
+            content: "➜";
+            top: 100%;
+            font-size: 30px;
             position: absolute;
             color: black !important;
+            transform: rotate(-180deg);
         }
       }
 }

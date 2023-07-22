@@ -527,6 +527,27 @@ li {
 
 .tabs-section {
   height: 600px; }
+  .tabs-section .nav-tab-area .text_area {
+    text-align: center; }
+    .tabs-section .nav-tab-area .text_area p {
+      padding-left: 10%;
+      padding-right: 10%; }
+  .tabs-section .nav-tab-area ul li {
+    border: none !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: solid 1px #ddd;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer; }
+  .tabs-section .nav-tab-area .tab_header ul.filter {
+    display: flex;
+    justify-content: center; }
+  .tabs-section .nav-tab-area .tab_header ul li {
+    padding: 12px;
+    font-size: 1em;
+    width: 10% !important;
+    text-align: center !important; }
   .tabs-section ul {
     margin: 0;
     padding: 0;
@@ -568,18 +589,61 @@ li {
   .tabs-section .slider .slick-next {
     left: 47% !important; }
   .tabs-section .slider .slick-prev {
-    left: 48%; }
+    left: 48%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #47ccc8; }
   .tabs-section .slider .slick-prev::after {
     content: "➜";
-    font-size: 40px;
-    top: 20%;
-    position: relative;
-    color: black !important;
-    border: 1px solid #47ccc8;
-    border-radius: 50%;
-    padding: 1%; }
-  .tabs-section .slider .slick-next::before {
-    content: "←";
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
-    color: black !important; }
+    color: black !important;
+    top: 36px;
+    padding: 1%; }
+  .tabs-section .slider .slick-prev:hover::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: green;
+    left: 55px;
+    color: white; }
+  .tabs-section .slider .slick-prev::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid green;
+    left: 55px; }
+  .tabs-section .slider .slick-next:hover::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: green;
+    left: -3px;
+    z-index: -1; }
+  .tabs-section .slider .slick-next::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid green;
+    left: -3px;
+    z-index: -1; }
+  .tabs-section .slider .slick-next::before {
+    content: "➜";
+    top: 100%;
+    font-size: 30px;
+    position: absolute;
+    color: black !important;
+    transform: rotate(-180deg); }
