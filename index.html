@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
       <!-- / font-awesome -->
       <link rel="stylesheet" href="styles/style.css">
+      
 </head>
 <body class="position-relative">
     <div class="main-section">
@@ -462,12 +463,12 @@
     <p>Etiam condimentum aliquam odio, ut consectetur enim. Nullam metus purus, pharetra quis tempus id, feugiat a augue. Etiam condimentum aliquam odio, ut consectetur enim. Ut sit amet iaculis nulla, sed dapibus justo. Nullam quis placerat massa, vitae ullamcorper nulla.</p>
   </div>
   <div class="tab_header container">
-    <ul class="filter clearfix w-100">
-      <li data-filter="all" class="all">All</li>
-      <li data-filter="cardiology" class="Cardiology">Cardiology</li>
-      <li data-filter="neurosurgery" class="neurosurgery">Neurosurgery</li>
-      <li data-filter="surgery" class="surgery">Surgery</li>
-      <li data-filter="urology" class="urology">Urology</li>
+    <ul class="filter clearfix w-100" id="tb_Header">
+      <li data-filter="all" class="tab_item active all">All</li>
+      <li data-filter="cardiology"  class="tab_item Cardiology">Cardiology</li>
+      <li data-filter="neurosurgery" class="tab_item neurosurgery">Neurosurgery</li>
+      <li data-filter="surgery" class="tab_item surgery">Surgery</li>
+      <li data-filter="urology" class="tab_item urology">Urology</li>
       
     </ul>
     
@@ -475,33 +476,98 @@
 
   
   <ul class="slider">
-    <li class="cardiology">1Cardiology</li>
+
     
-    <li class="neurosurgery">3Neurosurgery</li>
-  
-    <li class="surgery">5Surgery</li>
- 
-    <li class="urology">6Urology</li>
-    <li class="cardiology">2Cardiology</li>
-    <li class="neurosurgery">4Neurosurgery</li>
-    <li class="cardiology">1Cardiology</li>
+    <li class="cardiology">
+      <div class="card">
+        <div class="img-outer">
+          <div class="img-inner">
+            <img src="/assets/img/doctors/12.avif" alt="" class="card-img-top">
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Brain Thomas</div>
+          <p class="card-text">Cardiology</p>
+        <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+        </div>
+      </div>
+      
+
+
+    </li>
     
-    <li class="neurosurgery">3Neurosurgery</li>
+    <li class="neurosurgery">
+      <div class="card">
+        <div class="img-outer">
+          <div class="img-inner">
+            <img src="/assets/img/doctors/11.avif" alt="" class="card-img-top">
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Brain Thomas</div>
+          <p class="card-text">Cardiology</p>
+        <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+        </div>
+      </div>
+    </li>
   
-    <li class="surgery">5Surgery</li>
+    <li class="surgery">
+      <div class="card">
+        <div class="img-outer">
+          <div class="img-inner">
+            <img src="/assets/img/doctors/8.avif" alt="" class="card-img-top">
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Brain Thomas</div>
+          <p class="card-text">Cardiology</p>
+        <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+        </div>
+      </div>
+    </li>
  
-    <li class="urology">6Urology</li>
-    <li class="cardiology">2Cardiology</li>
-    <li class="neurosurgery">4Neurosurgery</li>
-    <li class="cardiology">1Cardiology</li>
-    
-    <li class="neurosurgery">3Neurosurgery</li>
+    <li class="urology">
+      <div class="card">
+        <div class="img-outer">
+          <div class="img-inner">
+            <img src="/assets/img/doctors/10.webp" alt="" class="card-img-top">
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Brain Thomas</div>
+          <p class="card-text">Cardiology</p>
+        <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+        </div>
+      </div>
+    </li>
+    <li class="cardiology"> <div class="card">
+      <div class="img-outer">
+        <div class="img-inner">
+          <img src="/assets/img/doctors/6.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Brain Thomas</div>
+        <p class="card-text">Cardiology</p>
+      <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+      </div>
+    </div></li>
+    <li class="neurosurgery">
+      <div class="card">
+        <div class="img-outer">
+          <div class="img-inner">
+            <img src="/assets/img/doctors/7.jpg" alt="" class="card-img-top">
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Brain Thomas</div>
+          <p class="card-text">Cardiology</p>
+        <small style="font-size: 12px; line-height: 5px; line-gap-override: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum! Nostrum delectus pariatur distinctio omnis est officiis.</small>
+        </div>
+      </div>
+    </li>
+   
   
-    <li class="surgery">5Surgery</li>
- 
-    <li class="urology">6Urology</li>
-    <li class="cardiology">2Cardiology</li>
-    <li class="neurosurgery">4Neurosurgery</li>
     
   </ul>
  </div>
@@ -534,5 +600,6 @@
     <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     
     <script src="./assets/js/main-script.js"></script>
+    
 </body>
 </html>

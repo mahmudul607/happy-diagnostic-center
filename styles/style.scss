@@ -828,21 +828,28 @@ li{list-style: none;}
     .nav-tab-area{
         .text_area{
             text-align: center;
-            p{
-                padding-left: 10%;
-                padding-right: 10%;
-            }
+            // p{
+            //     padding-left: 10%;
+            //     padding-right: 10%;
+            // }
         }
         ul li{
             border: none !important;
             padding-top: 50px;
             padding-bottom: 50px;
             border: solid 1px #ddd;
+            font-weight: 700;
             text-align: center;
-            font-size: 2em;
+            
             cursor: pointer;
         }
         .tab_header{
+            .active{
+                border-bottom:none !important;
+                background-color: lightgray;
+                margin: .5%;
+                padding: .5%;
+            }
             ul.filter{
                 display: flex;
                 justify-content: center;
@@ -852,9 +859,12 @@ li{list-style: none;}
             ul li {
                 padding: 12px;
                 font-size: 1em;
-                width: 10% !important;
+                width: 12% !important;
                 text-align: center !important;
+                border-bottom: dashed 2px lightgray !important;
+                
             }
+           
         }
 
     }
@@ -862,46 +872,13 @@ li{list-style: none;}
 
 
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-        width: 1100px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        
-        
-        
-        li {
-          padding-top: 50px;
-          padding-bottom: 50px;
-          border: solid 1px #ddd;
-          text-align: center;
-          font-size: 5em;
-          cursor: pointer;
-        }
-        
-        li.red {
-          background: red;
-          color: #fff;
-        }
-        li.yellow {
-          background: yellow;
-        }
-        li.blue {
-          background: blue;
-          color: #fff
-        }
-      }
       
       ul.filter {
         margin: 2em auto;
         
         li {
           padding: 12px;
-          font-size: 1em;
+          
           width: 25%;
           float: left;
         }
@@ -1000,6 +977,57 @@ li{list-style: none;}
             position: absolute;
             color: black !important;
             transform: rotate(-180deg);
+        }
+
+        li{
+            .card{
+                position: relative;
+                background-color: rgba(211, 211, 211, 0.3);
+                text-align: center;
+                .img-outer:hover{
+                    
+                        box-shadow:  0px 0px 30px 12px rgba(171, 255, 46, 0.2);
+                   
+                }
+               .img-outer{
+                display: flex;
+                height: 210px;
+                width: 210px;
+                justify-content: center;
+                position: relative;
+                background-color: white;
+                border-radius: 50%;
+                align-items: center;
+                left: 10%;
+                margin-top: 5%;
+               
+
+                .img-inner{
+                    height: 200px;
+                    width: 200px;
+                    padding: 5%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: relative;
+                    box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.15);
+                    
+                   
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                        
+                        
+                        
+                        
+                        
+                    }
+                   
+                }
+               }
+              
+            }
         }
       }
 }

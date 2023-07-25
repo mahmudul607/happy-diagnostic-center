@@ -529,53 +529,32 @@ li {
   height: 600px; }
   .tabs-section .nav-tab-area .text_area {
     text-align: center; }
-    .tabs-section .nav-tab-area .text_area p {
-      padding-left: 10%;
-      padding-right: 10%; }
   .tabs-section .nav-tab-area ul li {
     border: none !important;
     padding-top: 50px;
     padding-bottom: 50px;
     border: solid 1px #ddd;
+    font-weight: 700;
     text-align: center;
-    font-size: 2em;
     cursor: pointer; }
+  .tabs-section .nav-tab-area .tab_header .active {
+    border-bottom: none !important;
+    background-color: lightgray;
+    margin: .5%;
+    padding: .5%; }
   .tabs-section .nav-tab-area .tab_header ul.filter {
     display: flex;
     justify-content: center; }
   .tabs-section .nav-tab-area .tab_header ul li {
     padding: 12px;
     font-size: 1em;
-    width: 10% !important;
-    text-align: center !important; }
-  .tabs-section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 1100px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto; }
-    .tabs-section ul li {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      border: solid 1px #ddd;
-      text-align: center;
-      font-size: 5em;
-      cursor: pointer; }
-    .tabs-section ul li.red {
-      background: red;
-      color: #fff; }
-    .tabs-section ul li.yellow {
-      background: yellow; }
-    .tabs-section ul li.blue {
-      background: blue;
-      color: #fff; }
+    width: 12% !important;
+    text-align: center !important;
+    border-bottom: dashed 2px lightgray !important; }
   .tabs-section ul.filter {
     margin: 2em auto; }
     .tabs-section ul.filter li {
       padding: 12px;
-      font-size: 1em;
       width: 25%;
       float: left; }
   .tabs-section .slider button {
@@ -647,3 +626,32 @@ li {
     position: absolute;
     color: black !important;
     transform: rotate(-180deg); }
+  .tabs-section .slider li .card {
+    position: relative;
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center; }
+    .tabs-section .slider li .card .img-outer:hover {
+      box-shadow: 0px 0px 30px 12px rgba(171, 255, 46, 0.2); }
+    .tabs-section .slider li .card .img-outer {
+      display: flex;
+      height: 210px;
+      width: 210px;
+      justify-content: center;
+      position: relative;
+      background-color: white;
+      border-radius: 50%;
+      align-items: center;
+      left: 10%;
+      margin-top: 5%; }
+      .tabs-section .slider li .card .img-outer .img-inner {
+        height: 200px;
+        width: 200px;
+        padding: 5%;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.15); }
+        .tabs-section .slider li .card .img-outer .img-inner img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%; }

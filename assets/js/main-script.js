@@ -1,3 +1,20 @@
+let element = document.getElementById('tb_Header');
+element.addEventListener('click', (e)=>{
+  let elems = document.querySelector('.active');
+
+  if(elems != null){
+    elems.classList.remove('active');
+  }
+ 
+  e.target.className = 'active';
+ 
+
+});
+
+
+
+
+
 // Owl Carousel
 
 $(document).ready(function(){
@@ -23,21 +40,60 @@ $(document).ready(function(){
 
 
 // panne code
+function responsive(){
+  if(jQuery(window).width() > 1000){
+    $(".slider").slick({
+    
+      slidesToShow: 4,
+     slidesToScroll: 4,
+     arrows: true,
+     
+    
+   });
+  }
+  else if (jQuery(window).width() > 600){
+    $(".slider").slick({
+    
+      slidesToShow: 2,
+     slidesToScroll: 2,
+     arrows: true,
+     
+    
+   });
+  }
+  else if (jQuery(window).width() > 400){
+    $(".slider").slick({
+    
+      slidesToShow: 2,
+     slidesToScroll: 2,
+     arrows: true,
+     
+    
+   });
+  }
+  else if(jQuery(window).width() < 400){
+    $(".slider").slick({
+    
+      slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: true,
+     
+    
+   });
+  }
+}
 
 $(function() {
  
-   $(".slider").slick({
-     slidesToShow: 4,
-     slidesToScroll: 4,
-     arrows: true,
-   });
+  responsive();
+ 
    
    $(".filter li").on('click', function(){
      var filter = $(this).data('filter');
      $(".slider").slick('slickUnfilter');
      
      if(filter == 'cardiology'){
-       $(".slider").slick('slickFilter','.cardiology');
+       $(".slider").slick('slickFilter','.cardiology' );
        
      }
      else if(filter == 'neurosurgery'){
