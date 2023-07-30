@@ -71,16 +71,16 @@ function responsive(){
     
    });
   }
-  else if(jQuery(window).width() < 400){
-    $(".slider").slick({
+  // else if(jQuery(window).width() < 400){
+  //   $(".slider").slick({
     
-      slidesToShow: 1,
-     slidesToScroll: 1,
-     arrows: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //    arrows: true,
      
     
-   });
-  }
+  //  });
+  // }
 }
 
 $(function() {

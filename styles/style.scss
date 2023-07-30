@@ -832,10 +832,25 @@ li{list-style: none;}
             //     padding-left: 10%;
             //     padding-right: 10%;
             // }
+            h6{
+                color: #47ccc8;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            h2{
+                color: #2d3663;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            p{
+                font-family: sans-serif;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
         }
         ul li{
             border: none !important;
-            padding-top: 50px;
+           
             padding-bottom: 50px;
             border: solid 1px #ddd;
             font-weight: 700;
@@ -887,6 +902,8 @@ li{list-style: none;}
     
 
       .slider{
+        display: flex;
+        justify-content: center;
         
         button{
             border: none !important;
@@ -917,14 +934,14 @@ li{list-style: none;}
             font-size: 30px;
             position: absolute;
             color: black !important;
-            top: 36px;
+            top: -31px;
             padding: 1%;
   
         }
         .slick-prev:hover::before{
           content: "";
             position: absolute;
-            top: 39px;
+            top: -31px;
             height: 45px;
             width: 45px;
             border-radius: 50%;
@@ -938,7 +955,7 @@ li{list-style: none;}
         .slick-prev::before{
           content: "";
             position: absolute;
-            top: 39px;
+            top: -31px;
             height: 45px;
             width: 45px;
             border-radius: 50%;
@@ -951,7 +968,7 @@ li{list-style: none;}
         .slick-next:hover::after{
          content: "";
         position: absolute;
-        top: 25px;
+        top: -45px;
         height: 45px;
         width: 45px;
         border-radius: 50%;
@@ -962,7 +979,7 @@ li{list-style: none;}
         .slick-next::after{
          content: "";
         position: absolute;
-        top: 25px;
+        top: -45px;
         height: 45px;
         width: 45px;
         border-radius: 50%;
@@ -972,7 +989,7 @@ li{list-style: none;}
 }
         .slick-next::before{
             content: "➜";
-            top: 100%;
+            top: -166%;
             font-size: 30px;
             position: absolute;
             color: black !important;
@@ -980,10 +997,19 @@ li{list-style: none;}
         }
 
         li{
+            .slick-track{
+                width: 271px !important;
+
+                .slick-slide{
+                    width: 271px !important;
+                }
+            }
             .card{
                 position: relative;
                 background-color: rgba(211, 211, 211, 0.3);
                 text-align: center;
+                margin-right: 10px;
+                border: none !important;
                 .img-outer:hover{
                     
                         box-shadow:  0px 0px 30px 12px rgba(171, 255, 46, 0.2);
@@ -1025,6 +1051,53 @@ li{list-style: none;}
                     }
                    
                 }
+               }
+               .card-body{
+                 
+                p{
+                   
+                    background-color: #47ccc8;
+                    padding: 2%;
+                    width: 120px;
+                    border-radius: 20px;
+                    left: 25%;
+                    position: relative;
+                    text-transform: capitalize;
+                   
+                    
+                }
+               }
+              
+
+               .card-footer{
+                border: none !important;
+                ul{
+                    display: flex;
+                   padding-left: 0;
+                   justify-content: center;
+                    
+    
+                    li{
+                        margin-left: 2%;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background-color: white;
+                        position: relative;
+                        padding: .5%;
+                       
+                        
+                    }
+                    li:hover{
+                        // scale: 1.2;
+                        background-color: #47ccc8;
+                        padding: 0;
+                        color: #09219b;
+                        font-size: 20px;
+                        transition: all 0.2s ease-in-out;
+                    }
+                   }
+
                }
               
             }

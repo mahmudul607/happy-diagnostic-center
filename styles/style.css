@@ -529,9 +529,20 @@ li {
   height: 600px; }
   .tabs-section .nav-tab-area .text_area {
     text-align: center; }
+    .tabs-section .nav-tab-area .text_area h6 {
+      color: #47ccc8;
+      font-size: 18px;
+      font-weight: 700; }
+    .tabs-section .nav-tab-area .text_area h2 {
+      color: #2d3663;
+      font-size: 3rem;
+      font-weight: 700; }
+    .tabs-section .nav-tab-area .text_area p {
+      font-family: sans-serif;
+      padding-left: 15%;
+      padding-right: 15%; }
   .tabs-section .nav-tab-area ul li {
     border: none !important;
-    padding-top: 50px;
     padding-bottom: 50px;
     border: solid 1px #ddd;
     font-weight: 700;
@@ -557,101 +568,138 @@ li {
       padding: 12px;
       width: 25%;
       float: left; }
-  .tabs-section .slider button {
-    border: none !important;
-    background: none !important;
-    color: white !important; }
-  .tabs-section .slider .slick-prev, .tabs-section .slider .slick-next {
-    position: absolute;
-    bottom: -20%;
-    padding-right: 2rem !important; }
-  .tabs-section .slider .slick-next {
-    left: 47% !important; }
-  .tabs-section .slider .slick-prev {
-    left: 48%;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #47ccc8; }
-  .tabs-section .slider .slick-prev::after {
-    content: "➜";
-    font-size: 30px;
-    position: absolute;
-    color: black !important;
-    top: 36px;
-    padding: 1%; }
-  .tabs-section .slider .slick-prev:hover::before {
-    content: "";
-    position: absolute;
-    top: 39px;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: green;
-    left: 55px;
-    color: white; }
-  .tabs-section .slider .slick-prev::before {
-    content: "";
-    position: absolute;
-    top: 39px;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    border: 1px solid green;
-    left: 55px; }
-  .tabs-section .slider .slick-next:hover::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: green;
-    left: -3px;
-    z-index: -1; }
-  .tabs-section .slider .slick-next::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    border: 1px solid green;
-    left: -3px;
-    z-index: -1; }
-  .tabs-section .slider .slick-next::before {
-    content: "➜";
-    top: 100%;
-    font-size: 30px;
-    position: absolute;
-    color: black !important;
-    transform: rotate(-180deg); }
-  .tabs-section .slider li .card {
-    position: relative;
-    background-color: rgba(211, 211, 211, 0.3);
-    text-align: center; }
-    .tabs-section .slider li .card .img-outer:hover {
-      box-shadow: 0px 0px 30px 12px rgba(171, 255, 46, 0.2); }
-    .tabs-section .slider li .card .img-outer {
-      display: flex;
-      height: 210px;
-      width: 210px;
-      justify-content: center;
-      position: relative;
-      background-color: white;
+  .tabs-section .slider {
+    display: flex;
+    justify-content: center; }
+    .tabs-section .slider button {
+      border: none !important;
+      background: none !important;
+      color: white !important; }
+    .tabs-section .slider .slick-prev, .tabs-section .slider .slick-next {
+      position: absolute;
+      bottom: -20%;
+      padding-right: 2rem !important; }
+    .tabs-section .slider .slick-next {
+      left: 47% !important; }
+    .tabs-section .slider .slick-prev {
+      left: 48%;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
-      align-items: center;
-      left: 10%;
-      margin-top: 5%; }
-      .tabs-section .slider li .card .img-outer .img-inner {
-        height: 200px;
-        width: 200px;
-        padding: 5%;
-        border-radius: 50%;
-        overflow: hidden;
+      border: 1px solid #47ccc8; }
+    .tabs-section .slider .slick-prev::after {
+      content: "➜";
+      font-size: 30px;
+      position: absolute;
+      color: black !important;
+      top: -31px;
+      padding: 1%; }
+    .tabs-section .slider .slick-prev:hover::before {
+      content: "";
+      position: absolute;
+      top: -31px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: green;
+      left: 55px;
+      color: white; }
+    .tabs-section .slider .slick-prev::before {
+      content: "";
+      position: absolute;
+      top: -31px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 1px solid green;
+      left: 55px; }
+    .tabs-section .slider .slick-next:hover::after {
+      content: "";
+      position: absolute;
+      top: -45px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: green;
+      left: -3px;
+      z-index: -1; }
+    .tabs-section .slider .slick-next::after {
+      content: "";
+      position: absolute;
+      top: -45px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 1px solid green;
+      left: -3px;
+      z-index: -1; }
+    .tabs-section .slider .slick-next::before {
+      content: "➜";
+      top: -166%;
+      font-size: 30px;
+      position: absolute;
+      color: black !important;
+      transform: rotate(-180deg); }
+    .tabs-section .slider li .slick-track {
+      width: 271px !important; }
+      .tabs-section .slider li .slick-track .slick-slide {
+        width: 271px !important; }
+    .tabs-section .slider li .card {
+      position: relative;
+      background-color: rgba(211, 211, 211, 0.3);
+      text-align: center;
+      margin-right: 10px;
+      border: none !important; }
+      .tabs-section .slider li .card .img-outer:hover {
+        box-shadow: 0px 0px 30px 12px rgba(171, 255, 46, 0.2); }
+      .tabs-section .slider li .card .img-outer {
+        display: flex;
+        height: 210px;
+        width: 210px;
+        justify-content: center;
         position: relative;
-        box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.15); }
-        .tabs-section .slider li .card .img-outer .img-inner img {
-          height: 100%;
-          width: 100%;
-          border-radius: 50%; }
+        background-color: white;
+        border-radius: 50%;
+        align-items: center;
+        left: 10%;
+        margin-top: 5%; }
+        .tabs-section .slider li .card .img-outer .img-inner {
+          height: 200px;
+          width: 200px;
+          padding: 5%;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          box-shadow: 0px 0px 30px 12px rgba(0, 0, 0, 0.15); }
+          .tabs-section .slider li .card .img-outer .img-inner img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%; }
+      .tabs-section .slider li .card .card-body p {
+        background-color: #47ccc8;
+        padding: 2%;
+        width: 120px;
+        border-radius: 20px;
+        left: 25%;
+        position: relative;
+        text-transform: capitalize; }
+      .tabs-section .slider li .card .card-footer {
+        border: none !important; }
+        .tabs-section .slider li .card .card-footer ul {
+          display: flex;
+          padding-left: 0;
+          justify-content: center; }
+          .tabs-section .slider li .card .card-footer ul li {
+            margin-left: 2%;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            padding: .5%; }
+          .tabs-section .slider li .card .card-footer ul li:hover {
+            background-color: #47ccc8;
+            padding: 0;
+            color: #09219b;
+            font-size: 20px;
+            transition: all 0.2s ease-in-out; }
