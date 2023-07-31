@@ -473,6 +473,20 @@ li {
   overflow: hidden;
   padding-top: 5rem;
   height: 900px; }
+  .mri_details_section .inner-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 13%;
+    top: 0;
+    zoom: 1;
+    filter: alpha(opacity=5);
+    -webkit-opacity: 0.05;
+    -moz-opacity: 0.05;
+    opacity: 0.05;
+    background: url(../assets/img/bg-wave.png);
+    opacity: 0.05; }
   .mri_details_section .mri-inner-area .left_area {
     height: 600px;
     padding-top: 5rem !important;
@@ -594,7 +608,7 @@ li {
       color: black !important;
       top: -31px;
       padding: 1%;
-      left: 63px; }
+      left: 63px !important; }
     .tabs-section .slider .slick-prev:hover::before {
       content: "";
       position: absolute;
