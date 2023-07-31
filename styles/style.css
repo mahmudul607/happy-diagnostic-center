@@ -593,7 +593,8 @@ li {
       position: absolute;
       color: black !important;
       top: -31px;
-      padding: 1%; }
+      padding: 1%;
+      left: 63px; }
     .tabs-section .slider .slick-prev:hover::before {
       content: "";
       position: absolute;
