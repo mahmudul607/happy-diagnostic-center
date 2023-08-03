@@ -399,8 +399,12 @@ li {
         color: lightcyan;
         padding-left: 20% !important;
         padding-right: 20% !important; }
+    .offer-section .offer-body .offer_card_area .card:hover {
+      top: -0.5rem; }
     .offer-section .offer-body .offer_card_area .card {
-      position: relative; }
+      z-index: 100;
+      position: relative;
+      transition: all 1s ease; }
       .offer-section .offer-body .offer_card_area .card .image {
         height: 10rem;
         background-color: #47ccc8;
@@ -541,41 +545,48 @@ li {
 
 .tabs-section {
   height: 600px; }
-  .tabs-section .nav-tab-area .text_area {
-    text-align: center; }
-    .tabs-section .nav-tab-area .text_area h6 {
-      color: #47ccc8;
-      font-size: 18px;
-      font-weight: 700; }
-    .tabs-section .nav-tab-area .text_area h2 {
-      color: #2d3663;
-      font-size: 3rem;
-      font-weight: 700; }
-    .tabs-section .nav-tab-area .text_area p {
-      font-family: sans-serif;
-      padding-left: 15%;
-      padding-right: 15%; }
-  .tabs-section .nav-tab-area ul li {
-    border: none !important;
-    padding-bottom: 50px;
-    border: solid 1px #ddd;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer; }
-  .tabs-section .nav-tab-area .tab_header .active {
-    border-bottom: none !important;
-    background-color: lightgray;
-    margin: .5%;
-    padding: .5%; }
-  .tabs-section .nav-tab-area .tab_header ul.filter {
+  .tabs-section .nav-tab-area {
+    padding-bottom: 5rem; }
+    .tabs-section .nav-tab-area .text_area {
+      text-align: center; }
+      .tabs-section .nav-tab-area .text_area h6 {
+        color: #47ccc8;
+        font-size: 18px;
+        font-weight: 700; }
+      .tabs-section .nav-tab-area .text_area h2 {
+        color: #2d3663;
+        font-size: 3rem;
+        font-weight: 700; }
+      .tabs-section .nav-tab-area .text_area p {
+        font-family: sans-serif;
+        padding-left: 15%;
+        padding-right: 15%; }
+    .tabs-section .nav-tab-area ul li {
+      border: none !important;
+      padding-bottom: 50px;
+      border: solid 1px #ddd;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer; }
+    .tabs-section .nav-tab-area .tab_header .active {
+      border-bottom: none !important;
+      background-color: lightgray;
+      margin: .5%;
+      padding: .5%; }
+    .tabs-section .nav-tab-area .tab_header ul.filter {
+      display: flex;
+      justify-content: center; }
+    .tabs-section .nav-tab-area .tab_header ul li {
+      padding: 12px;
+      font-size: 1em;
+      width: 12% !important;
+      text-align: center !important;
+      border-bottom: dashed 2px lightgray !important; }
+  .tabs-section .b-btn {
+    padding-top: 2rem;
+    padding-left: 2rem;
     display: flex;
     justify-content: center; }
-  .tabs-section .nav-tab-area .tab_header ul li {
-    padding: 12px;
-    font-size: 1em;
-    width: 12% !important;
-    text-align: center !important;
-    border-bottom: dashed 2px lightgray !important; }
   .tabs-section ul.filter {
     margin: 2em auto; }
     .tabs-section ul.filter li {

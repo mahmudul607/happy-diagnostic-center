@@ -636,8 +636,17 @@ li{list-style: none;}
             }
         }
         .offer_card_area{
+
+            .card:hover{
+                top: -0.5rem;
+          
+                
+            }
             .card{
+                
+                z-index: 100;
                 position: relative;
+                transition: all 1s ease;
                 .image{
                     height: 10rem;
                     background-color: #47ccc8;
@@ -846,6 +855,7 @@ li{list-style: none;}
     height: 600px;
    
     .nav-tab-area{
+        padding-bottom: 5rem;
         .text_area{
             text-align: center;
             // p{
@@ -904,7 +914,12 @@ li{list-style: none;}
 
     }
 
-
+.b-btn{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+}
 
 
       
