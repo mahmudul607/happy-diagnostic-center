@@ -638,15 +638,17 @@ li{list-style: none;}
         .offer_card_area{
 
             .card:hover{
-                top: -0.5rem;
+                margin-top: -0.5rem;
           
                 
             }
             .card{
                 
                 z-index: 100;
-                position: relative;
-                transition: all 1s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
                 .image{
                     height: 10rem;
                     background-color: #47ccc8;
@@ -752,7 +754,7 @@ li{list-style: none;}
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 13%;
+        bottom: 15%;
         top: 0;
 
         zoom: 1;
@@ -1139,5 +1141,182 @@ li{list-style: none;}
             }
         }
       }
+}
+
+.testimonial{
+    margin-top: 30rem;
+    overflow: hidden;
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(rgba(45, 54, 99, 0.9), rgba(45, 54, 99, 0.9)), url(../assets/img/bg-partern/pngtree-blue-molecular-structure-dna-pattern-design-element-image_2280442.jpg);
+   
+    background-color: #2d3663;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .inner-bg{
+        .title-text{
+            text-align: center;
+            padding: 100px 0px 30px 0px;
+
+            h5{
+                color: white;
+                font-family: sans-serif;
+                font-weight: 600;
+            }
+            h1{
+                color: #47ccc8;
+                font-family: sans-serif;
+                font-weight: 700;
+            }
+        }
+
+        .testimonial-slide-section{
+            .owl-stage{
+                .owl-item{
+                    height: 600px;
+                    width: 40%;
+                    
+
+                    .card-item{
+                        height: 600px;
+                        background-color: white;
+                        border-radius: 10px;
+                        .circle-are{
+                            height: 120px;
+                            width: 120px;
+                            border-radius: 50%;
+                            background-color: rgba(245, 150, 150, 0.7);
+                            position: relative;
+                            top: -10%;
+                           left: 40%;
+                           overflow: hidden;
+                           padding: 1.8%;
+                           box-shadow: 0px 0px 2px 4px rgba(245, 150, 150, 0.7);
+                            .outer{
+                               
+
+                           .inner{
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 2px 4px rgba(245, 150, 150, 0.7);
+                           
+                            overflow: hidden;
+                         
+                           
+                           }
+                            }
+
+
+                          
+                            
+                        }
+
+                        .card-top{
+                            background-color: rgba(245, 150, 150, 0.1);
+                            height: 400px;
+                            display: flex;
+                            flex-direction: column;
+                          
+                            align-items: center;
+                            
+                            .img{
+                                height: 150px;
+                                width: 100px;
+                                padding: 70px 0px 10px 0px;
+                                img{
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                            h4{
+                                padding: 1rem;
+                                color:#2d3663;
+                                text-align: center;
+                                font-size: 20px;
+                                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            }
+                        }
+                        .card-top::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 33%;
+                            top: 0;
+                           
+                            zoom: 1;
+                            filter: alpha(opacity=5);
+                            -webkit-opacity: 0.08;
+                            -moz-opacity: 0.08;
+                            opacity: 0.08;
+                            background: url(../assets/img/bg-wave.png);
+                            opacity: 0.08;
+                        }
+
+                        .card-bottom{
+                            text-align: center;
+                            top: -10px;
+                            position: relative;
+                        }
+                    }
+                }
+               
+            }
+            .owl-theme {
+                .owl-dots{
+                    display: none !important;}
+                .owl-nav{
+                    margin-top: 40px !important;
+                    
+                    .owl-prev, .owl-next{
+                        height: 40px;
+                        
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: #47ccc8;
+                        span{
+                            display: none !important;
+                        }
+                    }
+                    .owl-prev::after{
+                        content: "➜";
+                        font-size: 32px;
+                        position: absolute;
+                        color: black !important;
+                        margin-bottom: 1rem;
+                        transform: rotate(-180deg) !important;
+                        bottom: -20px;
+                        right: 50.8%;
+
+                    }
+                    .owl-next::after{
+                        content: "➜";
+                        font-size: 30px;
+                        position: absolute;
+                        color: black !important;
+                        padding: 1%;
+                        bottom: -9px;
+                        right: 45.5%;
+                                                
+
+                       
+                        
+                    }
+                    .owl-prev:hover, .owl-next:hover{
+                        background-color: #2d3663;
+
+                    }
+                    .owl-prev:hover::after, .owl-next:hover::after{
+                        color: white !important;
+                    }
+                  }
+            }
+        }
+    }
+  
+  
 }
 
