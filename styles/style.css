@@ -1,7 +1,10 @@
 @charset "UTF-8";
+.hide {
+  display: none; }
+
 .useable-button {
   border-radius: 50px;
-  font-size: 25px;
+  font-size: 23px;
   background-color: #2d3663;
   position: relative;
   overflow: hidden;
@@ -40,6 +43,26 @@
 
 li {
   list-style: none; }
+
+.topbar {
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .topbar .hotline, .topbar .address, .topbar .daytime {
+    gap: 1rem; }
+  .topbar .hotline i, .topbar .address i, .topbar .daytime i {
+    height: 2em;
+    width: 2em;
+    padding: 0.5em;
+    background-color: #2d3663;
+    color: whitesmoke;
+    border-radius: 50%; }
+  .topbar .icon-area {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem; }
+    .topbar .icon-area i {
+      cursor: pointer; }
 
 .main-section {
   height: 650px;
@@ -203,13 +226,32 @@ li {
         display: flex;
         top: 37%;
         left: 33%; }
-  .main-section .header-section .row .col .offcanvas-body .nav-options {
-    display: flex !important;
-    flex-direction: column !important; }
-    .main-section .header-section .row .col .offcanvas-body .nav-options li {
-      cursor: pointer; }
-    .main-section .header-section .row .col .offcanvas-body .nav-options li:hover {
-      color: green; }
+  .main-section .header-section .row .col .offcanvas-body {
+    background-color: #2d3663;
+    color: white; }
+    .main-section .header-section .row .col .offcanvas-body .nav-options {
+      display: flex !important;
+      flex-direction: column !important; }
+      .main-section .header-section .row .col .offcanvas-body .nav-options li {
+        cursor: pointer;
+        margin-bottom: 2rem; }
+      .main-section .header-section .row .col .offcanvas-body .nav-options li:hover {
+        color: green; }
+      .main-section .header-section .row .col .offcanvas-body .nav-options li::after {
+        content: "\f105";
+        font: normal normal normal 14px/1 FontAwesome;
+        right: 10%;
+        position: absolute;
+        padding: 3.3%;
+        height: 40px;
+        width: 40px;
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: white;
+        border-radius: 50%; }
+      .main-section .header-section .row .col .offcanvas-body .nav-options li:hover::after {
+        color: green; }
   .main-section .header-section .row i {
     font-size: 25px; }
   .main-section .nav-row {
@@ -235,38 +277,38 @@ li {
     top: 0; }
 
 .categories-section {
-  min-height: 350px;
+  height: 450px;
   position: relative;
   z-index: 200;
-  margin-top: 1rem;
-  top: 0; }
+  margin-top: 1rem; }
   .categories-section .cards-section {
-    min-height: 400px;
+    height: 400px;
     width: 100%;
-    position: absolute;
-    top: -100px;
-    left: 10%; }
+    position: relative;
+    top: -100px; }
     .categories-section .cards-section .left-card {
       min-height: 400px;
-      margin-right: 2%;
       background-color: #47ccc8;
       border-radius: 10px; }
       .categories-section .cards-section .left-card .card-text {
         text-align: center; }
+        .categories-section .cards-section .left-card .card-text .btn {
+          color: white; }
+        .categories-section .cards-section .left-card .card-text .btn:hover {
+          color: #2d3663; }
     .categories-section .cards-section .right-card {
       height: 400px;
       background-color: #edf3f6;
       border-radius: 10px; }
       .categories-section .cards-section .right-card .right-card-body {
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid: .2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .2rem;
         padding: 6% !important;
         align-items: center; }
         .categories-section .cards-section .right-card .right-card-body .item {
           height: 130px;
           width: 130px;
-          margin: 1%;
           margin-bottom: 4%;
           margin-top: 10%;
           background-color: white;
@@ -288,6 +330,14 @@ li {
           .categories-section .cards-section .right-card .right-card-body .item:hover p {
             color: white; }
 
+.about-clinic-section .about-clinic-body .about-left h6 {
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.about-clinic-section .about-clinic-body .about-left h1 {
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 .about-clinic-section .about-clinic-body .about-left .about-button {
   background-color: #47ccc8 !important; }
 
@@ -296,6 +346,14 @@ li {
 
 .about-clinic-section .about-clinic-body .about-left .useable-button:hover span {
   color: white !important; }
+
+.about-clinic-section .about-clinic-body .about-right h1 {
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.about-clinic-section .about-clinic-body .about-right h4 {
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill {
   height: 150px;
@@ -846,3 +904,68 @@ li {
       background-color: #2d3663; }
     .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover::after, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover::after {
       color: white !important; }
+
+.freecheckup {
+  height: 400px;
+  display: flex;
+  background-color: #17f7ef; }
+  .freecheckup .offer {
+    display: flex;
+    width: 50%; }
+    .freecheckup .offer .offer-img {
+      width: 50%; }
+      .freecheckup .offer .offer-img img {
+        height: 100%;
+        padding: 20%; }
+    .freecheckup .offer .offer-text {
+      width: 50%;
+      text-align: left;
+      margin: auto;
+      padding: auto;
+      font-size: 3rem;
+      color: whitesmoke;
+      font-weight: 600;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .freecheckup .request {
+    margin: auto;
+    padding: auto; }
+    .freecheckup .request form {
+      position: relative; }
+      .freecheckup .request form input {
+        width: 30rem;
+        padding: 1.5rem;
+        border-radius: 25px; }
+      .freecheckup .request form button {
+        position: absolute;
+        text-align: left;
+        right: 0;
+        padding: 1.6rem;
+        width: 40%;
+        border-radius: 25px;
+        background-color: #2d3663;
+        color: white; }
+      .freecheckup .request form button:hover {
+        color: black;
+        background-color: #17f7ef; }
+      .freecheckup .request form button::after {
+        content: "→";
+        position: absolute;
+        font-size: 2rem;
+        color: black;
+        border-radius: 50%;
+        top: 10%;
+        right: 5%; }
+      .freecheckup .request form button::before {
+        content: "";
+        position: absolute;
+        font-size: 2rem;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        top: 18%;
+        right: 2%;
+        background-color: #17f7ef; }
+      .freecheckup .request form button:hover::before {
+        background-color: #09219b; }
+      .freecheckup .request form button:hover::after {
+        color: white; }
