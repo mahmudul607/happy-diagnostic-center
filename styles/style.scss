@@ -642,10 +642,12 @@ li{list-style: none;}
         height: 700px;
         position: relative;
         .image-in-bg{
-            height: 700px;
+            height: 40em;
             width: 100%;
             background: url(../assets/img/dims.healthgrades.jpg);
             position: relative;
+            background-position: center;
+            background-size: cover;
 
             .quality-items{
                 
@@ -697,6 +699,7 @@ li{list-style: none;}
 .offer-section{
     background-color: #2d3663;
     height: 1100px;
+    overflow: hidden;
     .offer-body{
         padding-top: 200px;
         .title_text_area{
@@ -720,6 +723,7 @@ li{list-style: none;}
             }
         }
         .offer_card_area{
+            padding: 1% !important;
 
             .card:hover{
                 margin-top: -0.5rem;
@@ -744,6 +748,7 @@ li{list-style: none;}
                         color: #2d3663;
                         font-weight: 700;
                         font-family: sans-serif;
+                        text-align: center;
                     }
                 }
                 .icon-circle{

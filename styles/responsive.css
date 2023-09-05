@@ -47,8 +47,26 @@
    .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption{
     top: 20%;
    }
-               
-  
+         /* Quality Section */
+         .image-in-bg{
+            height: 55em !important;
+            
+           
+    }
+/* Offer section style */
+.offer-section{
+    height: auto !important;
+    margin-top: auto !important;
+}
+.offer-section .offer-body{
+    padding-top: 50%!important;
+    width: 100% !important;
+    overflow: hidden;
+
+}
+.offer-section .offer-body .offer_card_area{
+    padding: 1% !important;
+}
    
 }
 
@@ -111,7 +129,37 @@
     .counter-area .item{
         width: 50%;
     }
-              
+         /* Quality Section */
+         .image-in-bg{
+            height: 50em !important;
+            
+           
+    }
+    .quality-section .items-body{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    /* Offer section style */
+.offer-section{
+    height: auto !important;
+    margin-top: auto !important;
+}
+.offer-section .offer-body{
+    padding-top: 50%!important;
+    width: 100% !important;
+    overflow: hidden;
+    
+
+}
+
+.offer-section .offer-body .offer_card_area{
+    padding: 1% !important;
+   
+}    
+.offer-section .offer-body .offer_card_area .row {
+    display: grid;
+    grid-template-columns: auto auto;
+}  
    
 }
 /*  Extra small device */
@@ -178,6 +226,33 @@
     .carousel-social-icon::before{
         height: 105% !important;
     }
+    .counter-section .counter-area .item{
+        display: flex;
+        justify-content: center;
+    }
+        /* Quality Section */
+        .image-in-bg{
+            height: 50em !important;
+            
+           
+    }
+    /* Offer section style */
+    .offer-section{
+        height: auto !important;
+        margin-top: auto !important;
+    }
+    .offer-section .offer-body{
+        padding-top: 100%!important;
+        width: 100% !important;
+        overflow: hidden;
+        
+    
+    }
+    
+    .offer-section .offer-body .offer_card_area{
+        padding: 1% !important;
+       
+    }  
     
 }
 
@@ -263,4 +338,11 @@
            h1{
             font-size: 15px;
            }
+            /* Quality Section */
+        .image-in-bg{
+            height: 40em !important;
+           
+            
+           
+    }
 }
