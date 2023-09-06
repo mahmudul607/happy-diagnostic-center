@@ -1,5 +1,50 @@
+@media screen and (min-width:992px) and (max-width: 1199.99px) {
+    .mri_details_section{
+        height: auto !important;
+        
+    }
+    
 
+    .mri_details_section .mri-details-items .item .text h3{
+        font-size: 2em !important;
 
+    }
+    .mri_details_section .mri-details-items .item .text p{
+        font-size: 1em !important;
+
+    }
+    .mri_details_section .right_area{
+        padding: 1%;
+        
+    }
+    /* MRi */
+    
+    /* Tab section style for responsive*/
+.tabs-section .nav-tab-area .tab_header ul.filter {
+    
+    justify-content: start;
+    gap: 0.5rem;
+  }
+  .tabs-section .nav-tab-area .tab_header .active {
+  
+    padding: 1.5%;
+  }
+  .tabs-section .nav-tab-area .tab_header ul li {
+    width: 19% !important;
+  }
+  ul {
+    padding-left: 0 !important;
+    
+}
+.tabs-section .slider li .card {
+
+    overflow: hidden;
+  }
+  .tabs-section .slider .slick-prev,  .tabs-section .slider .slick-next{
+    left: 46% !important;
+  
+  }
+}
 
 /* Medium device */
 @media screen and (min-width:768px) and (max-width:991.99px){
@@ -67,8 +112,45 @@
 .offer-section .offer-body .offer_card_area{
     padding: 1% !important;
 }
+/* Tab section style for responsive*/
+.tabs-section .nav-tab-area .tab_header ul.filter {
+    
+    justify-content: start;
+    gap: 0.5rem;
+  }
+  .tabs-section .nav-tab-area .tab_header .active {
+  
+    padding: 1.5%;
+  }
+  .tabs-section .nav-tab-area .tab_header ul li {
+    width: 19% !important;
+  }
+  .tabs-section .slider .slick-prev,  .tabs-section .slider .slick-next{
+    left: 46% !important;
+  
+  }
+  /* mri details section style */
+  .mri_details_section {
+    height: auto;
+  }
+/* testimonial */
+.testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next::after {
+    
+    bottom: -5px;
+    right: 43.5%;
+  }
+ 
    
 }
+
+
+
+
+
+
+
+
+
 
 /* small device */
 @media screen and (min-width:576px) and (max-width:767.99px){
@@ -160,10 +242,62 @@
     display: grid;
     grid-template-columns: auto auto;
 }  
+
+/* Tab section style for responsive*/
+.tabs-section .nav-tab-area .tab_header ul.filter {
+    
+    justify-content: start;
+    gap: 0.3rem;
+  }
+  .tabs-section .nav-tab-area .tab_header .active {
+  
+    padding: 1.2%;
+  }
+  .tabs-section .nav-tab-area .tab_header ul li {
+    width: 25% !important;
+  }
+  .tabs-section .slider .slick-prev,  .tabs-section .slider .slick-next{
+    left: 39% !important;
+  
+  }
+  .tabs-section .nav-tab-area ul{
+    padding-left: 0 !important;
+  }
+  .tabs-section .b-btn {
+   
+    padding-left: 0 !important;
+   
+  }
+  /* mri details section style */
+  .mri_details_section {
+    height: auto;
+  }
+  
+  /* testimonial */
+.testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next::after {
+    
+    bottom: -1.5px;
+    right: 41.5%;
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev::after {
+    bottom: -18.5px;
+    right: 51.8%;
+  }
+  .testimonial {
+    margin-top: 35rem !important;
+}
    
 }
+
+
+
+
 /*  Extra small device */
 @media screen and (max-width: 575.99px) {
+    .offcanvas .offcanvas-header img{
+        height: 80% !important;
+        width: 80% !important;
+    }
 
     .header-section .header-nav-section .nav-row .col img{
         height: 100%;
@@ -188,12 +322,13 @@
        
     }
     .categories-section{
-        
+        z-index: -1 !important;
         height: auto !important;
      }
      .cards-section{
          
          height: auto !important;
+         top: 0 !important;
      }
      .cards-section .card-body .left-card .card-text .btn{
         font-size: 15px;
@@ -253,8 +388,140 @@
         padding: 1% !important;
        
     }  
+/* offer-section */
+.offer-section .offer_card_area .card_text ul{
+    left: 0 !important;
+}
+
+/* Mri_section */
+  /* mri details section style */
+  .mri_details_section {
+    height: auto;
+  }
+.mri_details_section .mri-details-items{
+    grid-template-columns: auto !important;
+    grid-gap: 0.5rem;
+}
+.mri_details_section .mri-details-items .item{
+    flex-direction: column;
+}
+.mri_details_section .left_area{
+    height: auto !important;
+}
+.mri_details_section .right_area .doctor{
+    display: none !important;
+}
+.mri_details_section .right_area .mri_machine img{
+    height: 80% !important;
+    width: 100% !important;
+}
+.mri_details_section .right_area {
+    margin-bottom: 40px !important;
+}
+.mri_details_section .left_area  .mri_details_text h2{
+    font-size: 25px !important;
     
 }
+.mri_details_section .left_area  .mri_details_text h3{
+    font-size: 18px !important;
+
+}
+
+/* Tab section style for responsive*/
+
+
+.tabs-section .nav-tab-area .tab_header ul.filter {
+    
+    justify-content: start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .tabs-section .nav-tab-area .tab_header ul.filter li{
+    font-size: 12px;
+  }
+  .tabs-section .nav-tab-area .tab_header .active {
+  
+    padding: 0.2%;
+  }
+  /* .tabs-section .nav-tab-area .tab_header ul{
+
+  } */
+  .tabs-section .nav-tab-area .tab_header ul li {
+    width: 30% !important;
+  }
+  .tabs-section .slider .slick-prev,  .tabs-section .slider .slick-next{
+    left: 36% !important;
+  
+  }
+  .tabs-section .nav-tab-area ul{
+    padding-left: 0 !important;
+  }
+  .tabs-section .b-btn {
+   
+    padding-left: 0 !important;
+   
+  }
+  .tabs-section .nav-tab-area .text_area h2 {
+  
+    font-size: 1.5rem;
+    
+  }
+  .tabs-section .slider li .card .card-body p {
+    width: 120px;
+  }
+  
+  /* ul li {
+    width: 100% !important;
+}
+ul li {
+    width: 100% !important;
+} */
+    
+.testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next {
+    
+    background-color: unset;
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev {
+    background-color: unset;
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover {
+    background-color: unset;
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next::after {
+
+    bottom: -0.5px;
+    right: 30.5%;
+  }
+  .testimonial {
+    margin-top: 52rem !important;
+}
+.testimonial .inner-bg .testimonial-slide-section .owl-stage .owl-item .card-item .circle-are {
+    height: 100px;
+    width: 100px;
+    
+    top: -3%;
+    left: 20%;
+
+
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-stage .owl-item .card-item .card-top h4 {
+  
+    font-size: 12px;
+   
+  }
+  .testimonial .inner-bg .testimonial-slide-section .owl-stage .owl-item .card-item .card-top {
+    
+    height: 345px;
+    
+  }
+
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 250px) {
 
@@ -313,7 +580,9 @@
       
     }
       /* ./indicator responsive */
-    
+      /* clinical */
+
+   
     .cards-section .card-body .left-card .card-text .btn{
         font-size: 9px;
         
@@ -340,9 +609,41 @@
            }
             /* Quality Section */
         .image-in-bg{
-            height: 40em !important;
-           
-            
-           
-    }
+            height: 40em !important; 
+            }
+            /* mri_details section style */
+        .mri_details_section .right_area .mri_machine img{
+                height: 60% !important;
+                width: 100% !important;
+            }
+            .mri_details_section .right_area {
+                margin-bottom: 0 !important;
+            }
+            .mri_details_section .mri-details-items .item .text h3{
+                font-size: 1.2em !important;
+        
+            }
+            .mri_details_section .mri-details-items .item .text p{
+                font-size: .6em !important;
+        
+            }
+            /* tab section style */
+            .tabs-section .card .img-outer{
+                height: 140px !important;
+                width: 140px !important;
+                
+            }
+            .tabs-section .card .img-inner{
+                height: 130px !important;
+                width: 130px !important;
+
+            }
+            .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next::after {
+
+                bottom: 0px;
+                right: 15.5%;
+              }
+              .testimonial {
+                margin-top: 45rem !important;
+            }
 }

@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 // panne code
 function responsive(){
-  if(jQuery(window).width() > 1000){
+  if(jQuery(window).width() > 992){
     $(".slider").slick({
     
       slidesToShow: 4,
@@ -54,7 +54,7 @@ function responsive(){
     
    });
   }
-  else if (jQuery(window).width() > 600){
+  else if (jQuery(window).width() > 768){
     $(".slider").slick({
     
       slidesToShow: 2,
@@ -64,7 +64,7 @@ function responsive(){
     
    });
   }
-  else if (jQuery(window).width() > 400){
+  else if (jQuery(window).width() > 576){
     $(".slider").slick({
     
       slidesToShow: 2,
@@ -74,16 +74,16 @@ function responsive(){
     
    });
   }
-  // else if(jQuery(window).width() < 400){
-  //   $(".slider").slick({
+  else if(jQuery(window).width() < 576){
+    $(".slider").slick({
     
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+     arrows: true,
      
     
-  //  });
-  // }
+   });
+  }
 }
 
 $(function() {

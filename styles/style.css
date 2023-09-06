@@ -272,9 +272,6 @@ li {
       border-radius: 50%;
       height: 30px !important;
       width: 30px !important; }
-  .main-section .categories-section {
-    position: relative;
-    top: 0; }
 
 .categories-section {
   height: 450px;
@@ -461,7 +458,7 @@ li {
         padding-left: 20% !important;
         padding-right: 20% !important; }
     .offer-section .offer-body .offer_card_area {
-      padding: 1% !important; }
+      padding: 5% !important; }
       .offer-section .offer-body .offer_card_area .card:hover {
         margin-top: -0.5rem; }
       .offer-section .offer-body .offer_card_area .card {
@@ -540,7 +537,6 @@ li {
             background-color: #47ccc8; }
 
 .mri_details_section {
-  overflow: hidden;
   padding-top: 5rem;
   height: 900px; }
   .mri_details_section .inner-bg::after {
@@ -560,7 +556,7 @@ li {
   .mri_details_section .mri-inner-area .left_area {
     height: 600px;
     padding-top: 5rem !important;
-    padding-left: 4rem; }
+    padding-left: 1rem; }
     .mri_details_section .mri-inner-area .left_area .mri_details_text h2 {
       color: #47ccc8;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -575,24 +571,26 @@ li {
       color: darkgray; }
     .mri_details_section .mri-inner-area .left_area .mri-details-items {
       grid-template-columns: auto auto;
-      grid-gap: 1rem; }
-      .mri_details_section .mri-inner-area .left_area .mri-details-items .item {
-        height: 200px;
-        width: 300px; }
-        .mri_details_section .mri-inner-area .left_area .mri-details-items .item img {
-          width: 50%;
-          height: 40%;
-          font-size: 10px !important;
-          padding-right: 2rem;
-          color: #47ccc8; }
+      grid-gap: 0.5rem; }
+      .mri_details_section .mri-inner-area .left_area .mri-details-items .item .text h3 {
+        font-size: 20px; }
+      .mri_details_section .mri-inner-area .left_area .mri-details-items .item .text p {
+        font-size: 12px; }
+      .mri_details_section .mri-inner-area .left_area .mri-details-items .item img {
+        width: 60%;
+        height: 55%;
+        font-size: 10px !important;
+        padding-right: 2rem;
+        color: #47ccc8; }
   .mri_details_section .mri-inner-area .right_area {
     height: 600px;
     padding-top: 5rem;
-    position: relative; }
+    width: 100%;
+    margin-bottom: 10%; }
     .mri_details_section .mri-inner-area .right_area .mri_machine {
       height: 600px;
       width: 100%;
-      position: absolute; }
+      position: relative; }
       .mri_details_section .mri-inner-area .right_area .mri_machine img {
         height: 90%;
         width: 80%;
@@ -601,16 +599,18 @@ li {
     .mri_details_section .mri-inner-area .right_area .doctor {
       height: 600px;
       width: 100%;
-      position: absolute; }
+      position: relative; }
       .mri_details_section .mri-inner-area .right_area .doctor img {
         height: 100%;
         width: 80%;
         left: 20%;
-        top: -10%;
+        top: -100%;
         position: absolute; }
 
 .tabs-section {
-  height: 600px; }
+  height: 600px;
+  position: relative;
+  top: 100px; }
   .tabs-section .nav-tab-area {
     padding-bottom: 5rem; }
     .tabs-section .nav-tab-area .text_area {
@@ -653,6 +653,11 @@ li {
     padding-left: 2rem;
     display: flex;
     justify-content: center; }
+  .tabs-section .b-btn .useable-button {
+    color: white; }
+  .tabs-section .b-btn:hover .useable-button {
+    background-color: #17f7ef;
+    color: black !important; }
   .tabs-section ul.filter {
     margin: 2em auto; }
     .tabs-section ul.filter li {
@@ -741,6 +746,7 @@ li {
       background-color: rgba(211, 211, 211, 0.3);
       text-align: center;
       margin-right: 10px;
+      overflow: hidden;
       border: none !important; }
       .tabs-section .slider li .card .img-outer:hover {
         box-shadow: 0px 0px 30px 12px rgba(171, 255, 46, 0.2); }
@@ -749,11 +755,10 @@ li {
         height: 210px;
         width: 210px;
         justify-content: center;
-        position: relative;
         background-color: white;
         border-radius: 50%;
         align-items: center;
-        left: 10%;
+        margin: auto;
         margin-top: 5%; }
         .tabs-section .slider li .card .img-outer .img-inner {
           height: 200px;
@@ -770,10 +775,9 @@ li {
       .tabs-section .slider li .card .card-body p {
         background-color: #47ccc8;
         padding: 2%;
-        width: 120px;
+        width: 140px;
         border-radius: 20px;
-        left: 25%;
-        position: relative;
+        margin: auto;
         text-transform: capitalize; }
       .tabs-section .slider li .card .card-footer {
         border: none !important; }
