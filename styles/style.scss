@@ -1435,24 +1435,27 @@ li{list-style: none;}
 
 .freecheckup{
         height: 400px;
+        
         display: flex;
         background-color: #17f7ef;
         .offer{
             display: flex;
             width: 50%;
             .offer-img{
-                width: 50%;
+                width: 40% !important;
                 img{
-                    height: 100%;
-                    padding: 20%;
+                    height: 80% !important;
+                    padding-top: 40% !important;
+                    padding-right: 20%;
                    
                 }
             }
             .offer-text{
-                width: 50%;
+                width: 60%;
                 text-align: left;
                     margin: auto;
                     padding: auto;
+                    padding-left: 10%;
                     font-size: 3rem;
                     color: whitesmoke;
                     font-weight: 600;
@@ -1460,19 +1463,19 @@ li{list-style: none;}
             }
         }
         .request{
+            width: 50%;
             margin: auto;
             padding: auto;
             form{
                 position: relative;
                 input{
-                    width: 30rem;
+                    width: calc(100% - .3rem);
                     padding: 1.5rem;
                     border-radius: 25px;
                 }
                 button{
                     position: absolute;
                     text-align: left;
-                    
                     right: 0;
                     padding: 1.6rem;
                     width: 40%;

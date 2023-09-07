@@ -139,6 +139,50 @@
     bottom: -5px;
     right: 43.5%;
   }
+
+  /* Free checkup */
+  .freecheckup .offer{
+    flex-direction: column ;
+  }
+  .freecheckup .offer .offer-img{
+    width: 100%;
+    height: 50%;
+    padding-top: 3% !important;
+    margin: auto;
+  }
+  .freecheckup .offer .offer-img img{
+    height: 100%;
+    
+    padding: 0 !important;
+  }
+  .freecheckup .offer .offer-text{
+    width: 100%;
+    height: 50%;
+    padding: 3% !important;
+    font-size: 2rem;
+  }
+  .freecheckup .request button{
+    padding: 1.2rem;
+    width: 20%;
+
+  }
+  .freecheckup .request form button {
+ 
+    padding: 2.1em;
+    width: 40%;
+    font-size: 13px;
+  }
+  .freecheckup .request form button::before {
+    
+    height: 30px;
+    width: 30px;
+    top: 30%;
+  }
+  .freecheckup .request form button::after {
+  
+    font-size: 1.5rem;
+    top: 23%;
+  }
  
    
 }
@@ -285,6 +329,54 @@
   }
   .testimonial {
     margin-top: 35rem !important;
+}
+/* Free checkup */
+.freecheckup .offer{
+  width: 100%;
+}
+.freecheckup .offer .offer-img{
+  width: 50%;
+  height: 50%;
+  padding-top: 3% !important;
+  margin: auto;
+}
+.freecheckup .offer .offer-img img{
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+}
+.freecheckup .offer .offer-text{
+  width: 50%;
+  height: 50%;
+  padding: 3% !important;
+  font-size: 2rem;
+}
+.freecheckup .request{
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+
+.freecheckup .request form button {
+
+  padding: 2.1em;
+  width: 40%;
+  font-size: 13px;
+}
+.freecheckup .request form button::before {
+  
+  height: 30px;
+  width: 30px;
+  top: 30%;
+}
+.freecheckup .request form button::after {
+
+  font-size: 1.5rem;
+  top: 23%;
+}
+.freecheckup{
+  height: auto;
+  flex-direction: column;
 }
    
 }
@@ -514,6 +606,72 @@ ul li {
     height: 345px;
     
   }
+  /* Free checkup */
+.freecheckup .offer{
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.freecheckup .offer .offer-img{
+  width: 100%;
+  height: 50%;
+  padding-top: 3% !important;
+  margin: auto;
+}
+.freecheckup .offer .offer-img img{
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+}
+.freecheckup .offer .offer-text{
+  width: 100% !important;
+  height: 50%;
+  color: black;
+  text-align: center;
+  padding-top: 10%;
+  padding: auto;
+  font-size: 4rem;
+  margin: auto;
+}
+.freecheckup .request{
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+.freecheckup .request form {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+}
+.freecheckup .request form button {
+  position:unset;
+  text-align: left;
+  right: 0;
+ width: auto;
+
+  font-size: 1em;
+  border-radius: 25px;
+  background-color: #2d3663;
+  color: white;
+  margin: auto;
+}
+
+
+.freecheckup .request form button::before {
+  display: none;
+  /* height: 30px;
+  width: 30px;
+  top: 30%; */
+}
+.freecheckup .request form button::after {
+display: none;
+  /* font-size: 1.5rem;
+  top: 23%; */
+}
+.freecheckup{
+  height: auto;
+  flex-direction: column;
+}
+   
 
 }
 

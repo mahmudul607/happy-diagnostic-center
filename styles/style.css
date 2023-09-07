@@ -923,26 +923,29 @@ li {
     display: flex;
     width: 50%; }
     .freecheckup .offer .offer-img {
-      width: 50%; }
+      width: 40% !important; }
       .freecheckup .offer .offer-img img {
-        height: 100%;
-        padding: 20%; }
+        height: 80% !important;
+        padding-top: 40% !important;
+        padding-right: 20%; }
     .freecheckup .offer .offer-text {
-      width: 50%;
+      width: 60%;
       text-align: left;
       margin: auto;
       padding: auto;
+      padding-left: 10%;
       font-size: 3rem;
       color: whitesmoke;
       font-weight: 600;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   .freecheckup .request {
+    width: 50%;
     margin: auto;
     padding: auto; }
     .freecheckup .request form {
       position: relative; }
       .freecheckup .request form input {
-        width: 30rem;
+        width: calc(100% - .3rem);
         padding: 1.5rem;
         border-radius: 25px; }
       .freecheckup .request form button {
