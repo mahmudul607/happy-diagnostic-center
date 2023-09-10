@@ -89,6 +89,7 @@
     font-size: 15px;
     
    }
+  
    .main-section .header-section .slider .carousel-inner .carousel-item .carousel-caption{
     top: 20%;
    }
@@ -447,8 +448,17 @@
         height: 500px !important;
         
       }
-      .social-icons{
-        top: 27% !important;
+      .main-section .header-section .slider .slick-prev, .main-section .header-section .slider .slick-next{
+        display: none !important;
+      }
+  .main-section .header-section .slider .slick-track{
+        transform: translate3d(0px, -430px, 0px) !important;
+       }
+     
+    .main-section .header-section .slider .social-icons {
+      top: 62% !important;
+      height: 42%;
+      grid-gap: 1%;
     }
     .carousel-social-icon::before{
         height: 105% !important;
@@ -464,6 +474,13 @@
            
     }
     /* Offer section style */
+    .offer-section .offer-body .offer_card_area .card .icon-circle {
+      height: 100px;
+      width: 100px;
+      position: unset;
+      margin: auto;
+     
+    }
     .offer-section{
         height: auto !important;
         margin-top: auto !important;
@@ -629,7 +646,7 @@ ul li {
   text-align: center;
   padding-top: 10%;
   padding: auto;
-  font-size: 4rem;
+  font-size: 2rem;
   margin: auto;
 }
 .freecheckup .request{
