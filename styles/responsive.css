@@ -185,6 +185,12 @@
     top: 23%;
   }
  
+  /* article-section */
+
+  .article-section .article-area .text-card .card-part ul {
+   
+    justify-content: start;
+  }
    
 }
 
@@ -378,6 +384,24 @@
 .freecheckup{
   height: auto;
   flex-direction: column;
+}
+/* article-section */
+
+.article-section .article-area .text-card .card-part ul {
+   
+  justify-content: start;
+}
+.article-section .article-area .card-area {
+  display: block;
+}
+.article-section .article-area .double-card {
+  width: 96%;
+  padding: 8%;
+  
+}
+.article-section .article-area .double-card .c-item .text-area ul {
+  
+  justify-content: space-around;
 }
    
 }
@@ -688,7 +712,44 @@ display: none;
   height: auto;
   flex-direction: column;
 }
+/* article-section */
+.article-section .article-area .text-card .card-part ul {
    
+  justify-content: start;
+}
+.article-section .article-area .card-area {
+  display: block;
+}
+.article-section .article-area .double-card {
+  width: 96%;
+  padding: 8%;
+  
+}
+.article-section .article-area .double-card .c-item .text-area ul {
+  
+  justify-content: space-around;
+}
+.article-section .article-area .text-card .card-part button {
+  width: 11em !important;
+  font-size: 0.7rem;
+}
+.article-section .article-area .text-card .card-part h3 {
+  font-size: 1rem;
+ 
+}
+.article-section .article-area .text-card .card-part ul{
+  gap: 0 !important;
+}
+.article-section .article-area .text-card .card-part ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.article-section .article-area .double-card .c-item .useable-button {
+  width: 50%;
+  font-size: 15px;
+}
 
 }
 
@@ -820,5 +881,11 @@ display: none;
               }
               .testimonial {
                 margin-top: 45rem !important;
+            }
+            /* Article section */
+
+            .article-section .article-area .text-card .card-part button {
+              width: 8em !important;
+              font-size: 0.6rem;
             }
 }

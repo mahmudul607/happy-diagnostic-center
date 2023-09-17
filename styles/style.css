@@ -953,7 +953,7 @@ li {
         text-align: left;
         right: 0;
         padding: 1.6rem;
-        width: 40%;
+        width: 35%;
         border-radius: 25px;
         background-color: #2d3663;
         color: white; }
@@ -982,3 +982,96 @@ li {
         background-color: #09219b; }
       .freecheckup .request form button:hover::after {
         color: white; }
+
+.article-section {
+  background-color: #edf3f6; }
+  .article-section .title-area {
+    text-align: center; }
+  .article-section .article-area .card-area {
+    display: flex; }
+  .article-section .article-area .text-card {
+    width: 100%; }
+    .article-section .article-area .text-card .card-part {
+      box-shadow: 0 0 20px #b3b3c4;
+      padding: 2rem;
+      margin-bottom: .5rem; }
+      .article-section .article-area .text-card .card-part button {
+        width: 12em !important;
+        color: white;
+        font-size: 1.1rem;
+        border: none; }
+      .article-section .article-area .text-card .card-part .useable-button:hover {
+        background-color: #17f7ef;
+        color: #09219b; }
+      .article-section .article-area .text-card .card-part .useable-button:hover::before {
+        display: none; }
+      .article-section .article-area .text-card .card-part h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: sans-serif; }
+      .article-section .article-area .text-card .card-part ul {
+        padding-left: 0;
+        justify-content: start; }
+      .article-section .article-area .text-card .card-part ul i {
+        color: #17f7ef;
+        padding-right: .1rem; }
+  .article-section .article-area .double-card {
+    width: 50%;
+    margin: 2%; }
+    .article-section .article-area .double-card #cardiology-card {
+      overflow: hidden;
+      height: 550px;
+      width: 100%; }
+    .article-section .article-area .double-card #cardiology-card::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(22, 13, 13, 0.5);
+      top: 0;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      z-index: 1; }
+    .article-section .article-area .double-card #cardiology-card:hover::after {
+      display: none; }
+    .article-section .article-area .double-card #cardiology-card img {
+      position: relative;
+      height: 100%;
+      transition: all 0.5s;
+      width: 100%; }
+    .article-section .article-area .double-card #cardiology-card:hover img {
+      transform: scale(1.05); }
+    .article-section .article-area .double-card .c-item {
+      position: relative;
+      width: 100%; }
+      .article-section .article-area .double-card .c-item .over-text {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%; }
+      .article-section .article-area .double-card .c-item .useable-button {
+        width: 35%;
+        background-color: #17f7ef;
+        border: none; }
+      .article-section .article-area .double-card .c-item .useable-button:hover {
+        color: white;
+        position: relative;
+        z-index: 999; }
+      .article-section .article-area .double-card .c-item .useable-button:hover::before {
+        background-color: #2d3663;
+        z-index: -1; }
+      .article-section .article-area .double-card .c-item .text-area {
+        position: relative; }
+        .article-section .article-area .double-card .c-item .text-area h3 {
+          color: white; }
+        .article-section .article-area .double-card .c-item .text-area h3:hover {
+          color: #17f7ef; }
+        .article-section .article-area .double-card .c-item .text-area ul {
+          padding-left: 0;
+          justify-content: space-between; }
+        .article-section .article-area .double-card .c-item .text-area i {
+          color: #17f7ef;
+          padding-right: .4rem; }

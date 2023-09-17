@@ -1478,7 +1478,7 @@ li{list-style: none;}
                     text-align: left;
                     right: 0;
                     padding: 1.6rem;
-                    width: 40%;
+                    width: 35%;
                     border-radius: 25px;
                     background-color: #2d3663;
                     color: white;
@@ -1526,5 +1526,145 @@ li{list-style: none;}
 }
 
 
+.article-section{
+    background-color: #edf3f6;
+    .title-area{
+        text-align: center;
+    }
+    
+    .article-area{
+        .card-area{
+            display: flex;
+        }
+       
+        .text-card{
+            // background-color: white;
+           
+                width: 100%;
+               
+           
+            .card-part{
+                box-shadow: 0 0 20px rgb(179, 179, 196);
+                padding: 2rem;
+                margin-bottom: .5rem;
+                button{
+                    width: 12em !important;
+                    color: white;
+                    font-size: 1.1rem;
+                    border: none;
+                }
+                .useable-button:hover{
+                    background-color: #17f7ef;
+                    color: #09219b;
+                    
+                }
+                .useable-button:hover::before{
+                   display: none ;
+                    
+                }
+                h3{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    font-family: sans-serif;
+                }
+                ul{
+                    padding-left: 0;
+                    justify-content: start;
+                }
+                ul i{
+                    color: #17f7ef;
+                    padding-right: .1rem;
+                }
+            }
+        }
+        .double-card{
+            width: 50%;
+            margin: 2%;
+            #cardiology-card {
+                overflow: hidden;
+                height: 550px;
+                width: 100%;
+            }
+            #cardiology-card::after{
+                content: '';
+                position: absolute;
+                background-color: rgba(22, 13, 13,0.5);
+                top: 0;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                z-index: 1;
+            }
+            #cardiology-card:hover::after{
+                display: none;
+            }
+            #cardiology-card img{
+                position: relative;
+                height: 100%;
+                transition: all 0.5s;
+                width: 100%;
+                
+            }
+            #cardiology-card:hover img{
+               transform: scale(1.05);
+            }
+            
+            .c-item{
+
+                position: relative;
+                width: 100%;
+                .over-text{
+                    
+                        position: absolute;
+                        z-index: 999;
+                        top: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        width: 100%;
+                    
+                }
+                .useable-button{
+                    width: 35%;
+                    background-color: #17f7ef;
+                    border: none;
+                }
+                .useable-button:hover{
+                    color: white;
+                    position: relative;
+                    z-index: 999;
+                }
+                .useable-button:hover::before{
+                    background-color: #2d3663;
+                    z-index: -1;
+                    
+                    
+                }
+                .text-area{
+                    position: relative;
+                    h3{
+                        color: white;
+                    }
+                    h3:hover{
+                        color: #17f7ef;
+                    }
+
+
+                    ul{
+                        padding-left: 0;
+                        justify-content: space-between;
+                        
+                    }
+                    i{
+                        color: #17f7ef;
+                        padding-right: .4rem;
+                    }
+                }
+            }
+        }
+      
+    }
+}
 
 // Responsive
