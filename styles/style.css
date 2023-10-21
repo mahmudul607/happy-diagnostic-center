@@ -983,46 +983,52 @@ li {
       .freecheckup .request form button:hover::after {
         color: white; }
 
-.article-section {
+.medical_product, .article-section {
   background-color: #edf3f6; }
-  .article-section .title-area {
+  .medical_product .title-area, .article-section .title-area {
     text-align: center; }
-  .article-section .article-area .card-area {
+    .medical_product .title-area h5, .article-section .title-area h5 {
+      color: #17f7ef;
+      font-weight: 600; }
+    .medical_product .title-area h2, .article-section .title-area h2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 700; }
+  .medical_product .article-area .card-area, .article-section .article-area .card-area {
     display: flex; }
-  .article-section .article-area .text-card {
+  .medical_product .article-area .text-card, .article-section .article-area .text-card {
     width: 100%; }
-    .article-section .article-area .text-card .card-part {
+    .medical_product .article-area .text-card .card-part, .article-section .article-area .text-card .card-part {
       box-shadow: 0 0 20px #b3b3c4;
       padding: 2rem;
       margin-bottom: .5rem; }
-      .article-section .article-area .text-card .card-part button {
+      .medical_product .article-area .text-card .card-part button, .article-section .article-area .text-card .card-part button {
         width: 12em !important;
         color: white;
         font-size: 1.1rem;
         border: none; }
-      .article-section .article-area .text-card .card-part .useable-button:hover {
+      .medical_product .article-area .text-card .card-part .useable-button:hover, .article-section .article-area .text-card .card-part .useable-button:hover {
         background-color: #17f7ef;
         color: #09219b; }
-      .article-section .article-area .text-card .card-part .useable-button:hover::before {
+      .medical_product .article-area .text-card .card-part .useable-button:hover::before, .article-section .article-area .text-card .card-part .useable-button:hover::before {
         display: none; }
-      .article-section .article-area .text-card .card-part h3 {
+      .medical_product .article-area .text-card .card-part h3, .article-section .article-area .text-card .card-part h3 {
         font-size: 1.4rem;
         font-weight: 600;
         font-family: sans-serif; }
-      .article-section .article-area .text-card .card-part ul {
+      .medical_product .article-area .text-card .card-part ul, .article-section .article-area .text-card .card-part ul {
         padding-left: 0;
         justify-content: start; }
-      .article-section .article-area .text-card .card-part ul i {
+      .medical_product .article-area .text-card .card-part ul i, .article-section .article-area .text-card .card-part ul i {
         color: #17f7ef;
         padding-right: .1rem; }
-  .article-section .article-area .double-card {
+  .medical_product .article-area .double-card, .article-section .article-area .double-card {
     width: 50%;
     margin: 2%; }
-    .article-section .article-area .double-card #cardiology-card {
+    .medical_product .article-area .double-card #cardiology-card, .article-section .article-area .double-card #cardiology-card {
       overflow: hidden;
       height: 550px;
       width: 100%; }
-    .article-section .article-area .double-card #cardiology-card::after {
+    .medical_product .article-area .double-card #cardiology-card::after, .article-section .article-area .double-card #cardiology-card::after {
       content: '';
       position: absolute;
       background-color: rgba(22, 13, 13, 0.5);
@@ -1031,19 +1037,19 @@ li {
       width: 100%;
       left: 0;
       z-index: 1; }
-    .article-section .article-area .double-card #cardiology-card:hover::after {
+    .medical_product .article-area .double-card #cardiology-card:hover::after, .article-section .article-area .double-card #cardiology-card:hover::after {
       display: none; }
-    .article-section .article-area .double-card #cardiology-card img {
+    .medical_product .article-area .double-card #cardiology-card img, .article-section .article-area .double-card #cardiology-card img {
       position: relative;
       height: 100%;
       transition: all 0.5s;
       width: 100%; }
-    .article-section .article-area .double-card #cardiology-card:hover img {
+    .medical_product .article-area .double-card #cardiology-card:hover img, .article-section .article-area .double-card #cardiology-card:hover img {
       transform: scale(1.05); }
-    .article-section .article-area .double-card .c-item {
+    .medical_product .article-area .double-card .c-item, .article-section .article-area .double-card .c-item {
       position: relative;
       width: 100%; }
-      .article-section .article-area .double-card .c-item .over-text {
+      .medical_product .article-area .double-card .c-item .over-text, .article-section .article-area .double-card .c-item .over-text {
         position: absolute;
         z-index: 999;
         top: 0;
@@ -1052,26 +1058,143 @@ li {
         justify-content: space-between;
         height: 100%;
         width: 100%; }
-      .article-section .article-area .double-card .c-item .useable-button {
+      .medical_product .article-area .double-card .c-item .useable-button, .article-section .article-area .double-card .c-item .useable-button {
         width: 35%;
         background-color: #17f7ef;
         border: none; }
-      .article-section .article-area .double-card .c-item .useable-button:hover {
+      .medical_product .article-area .double-card .c-item .useable-button:hover, .article-section .article-area .double-card .c-item .useable-button:hover {
         color: white;
         position: relative;
         z-index: 999; }
-      .article-section .article-area .double-card .c-item .useable-button:hover::before {
+      .medical_product .article-area .double-card .c-item .useable-button:hover::before, .article-section .article-area .double-card .c-item .useable-button:hover::before {
         background-color: #2d3663;
         z-index: -1; }
-      .article-section .article-area .double-card .c-item .text-area {
+      .medical_product .article-area .double-card .c-item .text-area, .article-section .article-area .double-card .c-item .text-area {
         position: relative; }
-        .article-section .article-area .double-card .c-item .text-area h3 {
+        .medical_product .article-area .double-card .c-item .text-area h3, .article-section .article-area .double-card .c-item .text-area h3 {
           color: white; }
-        .article-section .article-area .double-card .c-item .text-area h3:hover {
-          color: #17f7ef; }
-        .article-section .article-area .double-card .c-item .text-area ul {
+        .medical_product .article-area .double-card .c-item .text-area h3:hover, .article-section .article-area .double-card .c-item .text-area h3:hover {
+          color: #17f7ef;
+          background-color: rgba(0, 0, 0, 0.3); }
+        .medical_product .article-area .double-card .c-item .text-area ul, .article-section .article-area .double-card .c-item .text-area ul {
           padding-left: 0;
           justify-content: space-between; }
-        .article-section .article-area .double-card .c-item .text-area i {
+        .medical_product .article-area .double-card .c-item .text-area i, .article-section .article-area .double-card .c-item .text-area i {
           color: #17f7ef;
           padding-right: .4rem; }
+
+.partners-section {
+  padding-top: 10%; }
+
+.partners-section .btmbdr {
+  margin: 5%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10%; }
+
+.partners-section .partners_area {
+  display: flex;
+  text-align: center;
+  justify-content: space-around; }
+
+.partners-section .partners_area img {
+  transition: all 0.2s ease-in-out; }
+
+.partners-section .partners_area img:hover {
+  scale: 1.2; }
+
+.footer_area {
+  background: linear-gradient(rgba(9, 17, 59, 0.9), rgba(9, 17, 59, 0.9)), url(../assets/img/bg-wave.png);
+  height: auto;
+  width: 100%; }
+  .footer_area .copy_rights p {
+    color: rgba(221, 221, 221, 0.2); }
+  .footer_area .row {
+    padding-top: 100px !important; }
+  .footer_area .footer_top_row {
+    border-bottom: 1px dashed rgba(196, 190, 190, 0.5);
+    padding: 50px;
+    height: 300px; }
+  .footer_area .logo {
+    height: auto; }
+    .footer_area .logo img {
+      color: white; }
+  .footer_area form {
+    height: auto; }
+    .footer_area form .subscrib_btn {
+      background-color: #17f7ef;
+      border: 2px solid #17f7ef; }
+    .footer_area form .subscrib_btn:hover {
+      background-color: white;
+      border: 2px solid white; }
+  .footer_area .follow_us {
+    font-weight: 700;
+    justify-content: flex-end; }
+    .footer_area .follow_us ul li i {
+      height: 50px;
+      width: 50px;
+      background-color: #17f7ef;
+      border-radius: 50%;
+      color: black;
+      padding: 28%;
+      font-size: 25px; }
+    .footer_area .follow_us ul li:hover i {
+      color: white; }
+  .footer_area .footer_middle_row {
+    padding: 3rem; }
+    .footer_area .footer_middle_row .outer h2 {
+      color: #17f7ef;
+      font-weight: 700;
+      padding-bottom: 20px; }
+    .footer_area .footer_middle_row .outer .about_us_items {
+      padding: 1%; }
+      .footer_area .footer_middle_row .outer .about_us_items .header_text {
+        color: #17f7ef; }
+        .footer_area .footer_middle_row .outer .about_us_items .header_text i {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: white;
+          color: #2d3663;
+          font-size: 15px;
+          padding: 2%; }
+        .footer_area .footer_middle_row .outer .about_us_items .header_text .inner_text {
+          color: white; }
+    .footer_area .footer_middle_row .outer .quick_move ul {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem; }
+      .footer_area .footer_middle_row .outer .quick_move ul li a {
+        text-decoration: none;
+        color: white; }
+      .footer_area .footer_middle_row .outer .quick_move ul li:before {
+        content: '> ';
+        position: relative;
+        color: #17f7ef; }
+      .footer_area .footer_middle_row .outer .quick_move ul li:hover a {
+        color: #17f7ef; }
+    .footer_area .footer_middle_row .outer .contact_footer {
+      text-align: center;
+      margin: auto; }
+      .footer_area .footer_middle_row .outer .contact_footer .useable-button:before, .footer_area .footer_middle_row .outer .contact_footer .btn {
+        background-color: white;
+        color: #2d3663; }
+      .footer_area .footer_middle_row .outer .contact_footer i {
+        color: black; }
+      .footer_area .footer_middle_row .outer .contact_footer .useable-button:hover:before, .footer_area .footer_middle_row .outer .contact_footer .btn:hover {
+        background-color: #17f7ef !important; }
+      .footer_area .footer_middle_row .outer .contact_footer .useable-button {
+        font-size: 15px; }
+    .footer_area .footer_middle_row .outer .viewers .items {
+      display: flex;
+      gap: 1rem;
+      height: 100%;
+      width: 100%; }
+      .footer_area .footer_middle_row .outer .viewers .items img {
+        width: 30%;
+        height: 70px;
+        border-radius: 10px; }
+    .footer_area .footer_middle_row .outer .viewers .view_details span {
+      color: gray; }
+    .footer_area .footer_middle_row .outer .viewers .view_details i {
+      color: #17f7ef; }
+    .footer_area .footer_middle_row .outer .viewers .view_details p {
+      font-weight: 700; }

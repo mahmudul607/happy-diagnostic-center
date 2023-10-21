@@ -1526,10 +1526,19 @@ li{list-style: none;}
 }
 
 
-.article-section{
+.medical_product, .article-section{
     background-color: #edf3f6;
     .title-area{
         text-align: center;
+
+        h5{
+            color: #17f7ef;
+            font-weight: 600;
+        }
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
     }
     
     .article-area{
@@ -1648,6 +1657,7 @@ li{list-style: none;}
                     }
                     h3:hover{
                         color: #17f7ef;
+                        background-color: rgba(0, 0, 0, .3);
                     }
 
 
@@ -1667,4 +1677,223 @@ li{list-style: none;}
     }
 }
 
+
+// partners section styles
+.partners-section {
+    padding-top: 10%;
+   
+    
+    
+}
+.partners-section .btmbdr{
+    margin: 5%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10%;
+}
+
+.partners-section .partners_area{
+    
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+.partners-section .partners_area img{
+    transition: all 0.2s ease-in-out;
+}
+
+.partners-section .partners_area img:hover{
+    scale: 1.2;
+    
+}
+
+
+
+
+// footer styles
+
+
+.footer_area{
+    background: linear-gradient(rgba(9, 17, 59, 0.9), rgba(9, 17, 59, 0.9)), url(../assets/img/bg-wave.png);
+    height: auto;
+    width: 100%;
+   
+    .copy_rights{
+        p{
+            color: rgba(221, 221, 221, 0.2);
+        }
+    }
+
+    .row{
+        padding-top: 100px !important;
+        
+    }
+    .footer_top_row{
+        border-bottom: 1px dashed rgba(196, 190, 190, 0.5);
+        padding: 50px;
+        height: 300px;
+    }
+    .logo{
+        // background-color: white;
+        height: auto;
+        img{
+            color: white;
+        }
+    }
+
+    form{
+        height: auto;
+        
+        .subscrib_btn{
+            background-color: #17f7ef;
+            border: 2px solid #17f7ef;
+        }
+        .subscrib_btn:hover{
+            background-color: white;
+            border: 2px solid white;
+        }
+    }
+    .follow_us{
+        
+        font-weight: 700;
+        justify-content: flex-end;
+        
+
+        ul {
+            
+
+            li{
+                
+               i{
+                height: 50px;
+                width: 50px;
+                background-color: #17f7ef;
+                border-radius: 50%;
+                color: black;
+                padding: 28%;
+                font-size: 25px;
+                
+                
+               }
+            }
+            li:hover{
+                i{
+                    color: white;
+                }
+            }
+            
+        }
+    }
+
+    .footer_middle_row{
+        padding: 3rem;
+        
+        .outer{
+            h2{
+                color: #17f7ef;
+                font-weight: 700;
+                padding-bottom: 20px;
+            }
+
+            .about_us_items{
+                padding: 1%;
+                .header_text{
+                    color: #17f7ef;
+                    
+                    i{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: white;
+                        color: #2d3663;
+                        font-size: 15px;
+                        padding: 2%;
+                        
+
+                    }
+                    .inner_text{
+                        color: white;
+                    }
+                }
+            }
+            .quick_move{
+                ul{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1rem;
+
+                    li{
+                       
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                    li:before{
+                        content: '> ';
+                        position: relative;
+                        color: #17f7ef;
+
+                    }
+                   
+                    li:hover{
+                        a{
+                            color: #17f7ef;
+                        }
+                    }
+                }
+            }
+
+            .contact_footer{
+                text-align: center;
+                // padding: auto;
+                margin: auto;
+                .useable-button:before, .btn{
+                    background-color: white;
+                    color: #2d3663;
+                    
+                }
+                i{
+                    color: black;
+                }
+                .useable-button:hover:before, .btn:hover{
+                    background-color: #17f7ef !important;
+
+                }
+                .useable-button {
+                    font-size: 15px;
+                  }
+            }
+
+
+            .viewers{
+                .items{
+                    display: flex;
+                    gap: 1rem;
+                    height: 100%;
+                    width: 100%;
+
+                    img{
+                        width: 30%;
+                        height: 70px;
+                        border-radius: 10px;
+                    }
+                }
+                .view_details{
+                    span{
+                        color: gray;
+                    }
+                    i{
+                        color: #17f7ef;
+                    }
+                    p{
+                        font-weight: 700;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+}
 // Responsive
