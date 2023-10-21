@@ -1172,7 +1172,6 @@ li {
       .footer_area .footer_middle_row .outer .quick_move ul li:hover a {
         color: #17f7ef; }
     .footer_area .footer_middle_row .outer .contact_footer {
-      text-align: center;
       margin: auto; }
       .footer_area .footer_middle_row .outer .contact_footer .useable-button:before, .footer_area .footer_middle_row .outer .contact_footer .btn {
         background-color: white;
