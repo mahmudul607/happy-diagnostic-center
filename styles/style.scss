@@ -1,4 +1,4 @@
-
+@import "../styles/contact.scss";
 $barSpanColor: blue;
 $iconBackgroundColor: rgb(147, 218, 247);
 $iconForegroundColor2:none;
@@ -16,6 +16,7 @@ $iconForegroundColor2:none;
     z-index: 999;
     .button-icon{
         color: white;
+        
     }
     
 
@@ -95,7 +96,7 @@ li{list-style: none;}
     position: relative;
     z-index: 1;
     margin-bottom: 1rem;
- 
+}
    
     .header-section{
         
@@ -425,7 +426,7 @@ li{list-style: none;}
     }
 
     
-}
+
 
 .categories-section{
     height: 450px;
@@ -1903,4 +1904,14 @@ li{list-style: none;}
 
     }
 }
-// Responsive
+
+
+.quick_move_header{
+    height: 250px;
+    width: 100%;
+    background-image:linear-gradient(rgba(43, 49, 83, 0.9),rgba(43, 49, 83, 0.9)), url(../assets/img/bg-partern/pngtree-blue-molecular-structure-dna-pattern-design-element-image_2280442.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
