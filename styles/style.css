@@ -1111,7 +1111,7 @@ li {
   .footer_area .row {
     padding-top: 100px !important; }
   .footer_area .footer_top_row {
-    border-bottom: 1px dashed rgba(196, 190, 190, 0.5);
+    border-bottom: 2px dashed rgba(196, 190, 190, 0.5);
     padding: 50px;
     height: 300px; }
   .footer_area .logo {
@@ -1191,9 +1191,13 @@ li {
         width: 30%;
         height: 70px;
         border-radius: 10px; }
-    .footer_area .footer_middle_row .outer .viewers .view_details span {
-      color: gray; }
-    .footer_area .footer_middle_row .outer .viewers .view_details i {
-      color: #17f7ef; }
-    .footer_area .footer_middle_row .outer .viewers .view_details p {
-      font-weight: 700; }
+    .footer_area .footer_middle_row .outer .viewers .view_details {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column; }
+      .footer_area .footer_middle_row .outer .viewers .view_details span {
+        color: gray; }
+      .footer_area .footer_middle_row .outer .viewers .view_details i {
+        color: #17f7ef; }
+      .footer_area .footer_middle_row .outer .viewers .view_details p {
+        font-weight: 700; }

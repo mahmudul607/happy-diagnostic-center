@@ -125,18 +125,57 @@ $(function() {
 
 // remove it before start new work
 
-const checkClicked = document.querySelector(".btn").addEventListener('click', () => {
-   console.log('clicked me');
-})
+
 // Remove it then Start coding for new work
 
 
-$('.counter').counterUp({
-   delay: 10,
-   time: 1300
- });
- $('.counter').addClass('animated fadeInDownBig');
- $('h3').addClass('animated fadeIn');
+// $('.counter').counterUp({
+//    delay: 10,
+//    time: 1300
+//  });
+//  $('.counter').addClass('animated fadeInDownBig');
+//  $('h3').addClass('animated fadeIn');
+
+const counters = document.getElementsByClassName('counter');
+
+let inc = [];
+function interval(){
+
+  for(let i = 0; i < counters.length; i++) {
+    inc.push(1);
+
+    if(inc[i] != counters[i].getAttribute('max-data')){
+      inc[i]++;
+    }
+    counters[i].innerHTML = inc[i];
+  }
+
+}
+
+// setInterval(interval, 50);
+
+
+let main = document.getElementById('quality-section');
+window.onscroll = function(){
+    let timer = setInterval(() =>{
+        let topElem = main.offsetTop;
+        let btmElem = main.offsetTop + main.clientHeight;
+        let topScreen = window.pageYOffset;
+        let btmScreen = window.pageYOffset + window.innerHeight;
+        if (btmScreen > topElem && topScreen < btmElem){
+            interval();
+        }
+        else{
+            clearInterval(timer);
+            for(let i=0; i<counters.length; i++){
+                // count[i].innerHTML = 1;
+                inc = [];
+            }
+        }
+    }, 200)
+    
+
+}
 
 
 

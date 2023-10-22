@@ -1729,9 +1729,10 @@ li{list-style: none;}
         
     }
     .footer_top_row{
-        border-bottom: 1px dashed rgba(196, 190, 190, 0.5);
+        border-bottom: 2px dashed rgba(196, 190, 190, 0.5);
         padding: 50px;
         height: 300px;
+        
     }
     .logo{
         // background-color: white;
@@ -1866,6 +1867,9 @@ li{list-style: none;}
 
 
             .viewers{
+                
+                    
+                  
                 .items{
                     display: flex;
                     gap: 1rem;
@@ -1879,6 +1883,9 @@ li{list-style: none;}
                     }
                 }
                 .view_details{
+                    gap: 1rem;
+                    display: flex;
+                    flex-direction: column;
                     span{
                         color: gray;
                     }

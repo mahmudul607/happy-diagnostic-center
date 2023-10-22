@@ -1053,4 +1053,11 @@ display: none;
              
               padding: 4%;
             }
+            .footer_area .footer_top_row{
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+            .footer_area .copy_rights{
+              padding: 0 !important;
+            }
 }
