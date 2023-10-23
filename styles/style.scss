@@ -1758,7 +1758,7 @@ li{list-style: none;}
     .follow_us{
         
         font-weight: 700;
-        justify-content: flex-end;
+        justify-content: start;
         
 
         ul {
@@ -1767,12 +1767,12 @@ li{list-style: none;}
             li{
                 
                i{
-                height: 50px;
-                width: 50px;
+                height: 40px;
+                width: 40px;
                 background-color: #17f7ef;
                 border-radius: 50%;
                 color: black;
-                padding: 28%;
+                padding: 8px;
                 font-size: 25px;
                 
                 
@@ -1809,7 +1809,7 @@ li{list-style: none;}
                         background-color: white;
                         color: #2d3663;
                         font-size: 15px;
-                        padding: 2%;
+                        padding: 9px;
                         
 
                     }
@@ -1878,7 +1878,7 @@ li{list-style: none;}
                     width: 100%;
 
                     img{
-                        width: 30%;
+                        width: 80%;
                         height: 70px;
                         border-radius: 10px;
                     }

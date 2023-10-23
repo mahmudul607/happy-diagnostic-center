@@ -200,17 +200,24 @@
     width: 33.33%;
     padding: 5%;
   }
- 
-  .footer_area .follow_us {
-    
-    position: relative;
-    
+  .footer_area .footer_top_row{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
+ 
   .footer_area .follow_us ul li i {
     height: 30px;
     width: 30px;
    
     font-size: 15px;
+  }
+  .footer_area .footer_middle_row .outer .viewers .items {
+   
+    flex-direction: column;
+  }
+  .footer_area .footer_middle_row .outer .viewers .items img {
+    width: 50%;
+   
   }
    
 }
@@ -445,6 +452,10 @@
  
   font-size: 15px;
 }
+.footer_area .footer_middle_row .outer .viewers .items img {
+  width: 30%;
+ 
+}
 
    
 }
@@ -482,12 +493,14 @@
   .footer_area .follow_us ul li i {
     height: 30px;
     width: 30px;
-   
+    
     font-size: 15px;
   }
-  .footer_area .footer_top_row {
-   padding-left: 0;
-   padding-right: 0;
+  .footer_area .footer_top_row{
+  padding-left: 0 !important;
+   padding-right: 0 !important;
+  margin-left: 0 !important;
+   margin-right: 0 !important;
   }
     .offcanvas .offcanvas-header img{
         height: 80% !important;
@@ -656,9 +669,7 @@
   
     padding: 0.2%;
   }
-  /* .tabs-section .nav-tab-area .tab_header ul{
 
-  } */
   .tabs-section .nav-tab-area .tab_header ul li {
     width: 30% !important;
   }
@@ -683,12 +694,7 @@
     width: 120px;
   }
   
-  /* ul li {
-    width: 100% !important;
-}
-ul li {
-    width: 100% !important;
-} */
+
     
 .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next {
     
@@ -845,6 +851,22 @@ display: none;
 }
 .partners-section .partners_area  {
   flex-wrap: wrap;
+}
+.footer_area .footer_middle_row .outer .viewers .items {
+   
+  flex-direction: column;
+}
+.footer_area .footer_middle_row .outer .viewers .items img {
+  width: 50%;
+ 
+}
+.footer_area .footer_middle_row .outer .quick_move ul {
+  grid-template-columns: repeat(1, 1fr);
+  
+}
+.footer_area .footer_middle_row .outer .about_us_items .header_text i {
+
+  padding: 8px;
 }
 
 }
@@ -1049,10 +1071,7 @@ display: none;
             .footer_area .logo img{
               width: 100%;
             }
-            .footer_area .footer_middle_row .outer .about_us_items .header_text i {
-             
-              padding: 4%;
-            }
+           
             .footer_area .footer_top_row{
               margin-left: 0 !important;
               margin-right: 0 !important;
