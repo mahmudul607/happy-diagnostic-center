@@ -484,7 +484,29 @@
 
 /*  Extra small device */
 @media screen and (max-width: 575.99px) {
+  .quality-section .quality-body .image-in-bg .quality-items .items-body .item .item_text h6 {
+  
+    font-size: 13px;
+  }
 
+  .offer-section .offer-body .title_text_area h2 {
+    font-size: 20px;
+  }
+
+  .quality-section .quality-body .image-in-bg .quality-items {
+   
+    bottom: -300px;
+   
+  }
+  .quality-section .quality-body .image-in-bg .quality-items .items-body .item {
+
+    padding: 0;
+  }
+
+  .about_quality .quality-body {
+    height: 200px !important;
+   
+  }
   .footer_area .follow_us {
     
     position: relative;
@@ -586,9 +608,13 @@
     }
         /* Quality Section */
         .image-in-bg{
-            height: 50em !important;
+            height: 50em ;
             
            
+    }
+    .image_in_aboutus_bg{
+      height: 10em !important;
+
     }
     /* Offer section style */
     .offer-section .offer-body .offer_card_area .card .icon-circle {
@@ -878,6 +904,10 @@ display: none;
 
 
 @media screen and (max-width: 250px) {
+  .quality-section .quality-body .image-in-bg {
+    height: 25em;
+    
+  }
 
   .medical_product .article-area .double-card .c-item .text-area, .article-section .article-area .double-card .c-item .text-area {
     padding: 0.5rem !important;
@@ -996,8 +1026,12 @@ display: none;
            }
             /* Quality Section */
         .image-in-bg{
-            height: 40em !important; 
+            height: 40em; 
             }
+            .image_in_aboutus_bg{
+              height: 10em !important;
+            }
+            
             /* mri_details section style */
         .mri_details_section .right_area .mri_machine img{
                 height: 60% !important;

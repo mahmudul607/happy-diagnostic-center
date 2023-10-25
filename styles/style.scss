@@ -3,9 +3,11 @@ $barSpanColor: blue;
 $iconBackgroundColor: rgb(147, 218, 247);
 $iconForegroundColor2:none;
 // Universal inner button stye
-.hide{
-    display: none;
+
+a{
+    text-decoration: none;
 }
+
 
 .useable-button{
     border-radius: 50px;
@@ -959,8 +961,8 @@ li{list-style: none;}
 
 
 .tabs-section{
-    height: 600px;
-    position: relative;
+    // height: 600px;
+    // position: relative;
     top:100px;
    
     .nav-tab-area{
@@ -1025,7 +1027,7 @@ li{list-style: none;}
 
 .b-btn{
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     
@@ -1258,7 +1260,7 @@ li{list-style: none;}
 }
 
 .testimonial{
-    margin-top: 30rem;
+    // margin-top: 30rem;
     overflow: hidden;
     height: 1000px;
     width: 100%;
@@ -1915,3 +1917,11 @@ li{list-style: none;}
     background-attachment: fixed;
 
 }
+
+
+.about_quality .quality-body {
+    height: auto !important;
+    position: relative;
+  }
+
+ 

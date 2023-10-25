@@ -64,8 +64,8 @@
     background-color: #1cb7eb;
     color: #2d3663; }
 
-.hide {
-  display: none; }
+a {
+  text-decoration: none; }
 
 .useable-button {
   border-radius: 50px;
@@ -678,8 +678,6 @@ li {
         position: absolute; }
 
 .tabs-section {
-  height: 600px;
-  position: relative;
   top: 100px; }
   .tabs-section .nav-tab-area {
     padding-bottom: 5rem; }
@@ -720,7 +718,7 @@ li {
       border-bottom: dashed 2px lightgray !important; }
   .tabs-section .b-btn {
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center; }
   .tabs-section .b-btn .useable-button {
@@ -871,7 +869,6 @@ li {
             transition: all 0.2s ease-in-out; }
 
 .testimonial {
-  margin-top: 30rem;
   overflow: hidden;
   height: 1000px;
   width: 100%;
@@ -1279,3 +1276,7 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+
+.about_quality .quality-body {
+  height: auto !important;
+  position: relative; }
