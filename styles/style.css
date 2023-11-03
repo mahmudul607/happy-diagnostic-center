@@ -113,9 +113,13 @@ li {
   height: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
-  .topbar .hotline, .topbar .address, .topbar .daytime {
+  .topbar .hotline,
+  .topbar .address,
+  .topbar .daytime {
     gap: 1rem; }
-  .topbar .hotline i, .topbar .address i, .topbar .daytime i {
+  .topbar .hotline i,
+  .topbar .address i,
+  .topbar .daytime i {
     height: 2em;
     width: 2em;
     padding: 0.5em;
@@ -441,7 +445,9 @@ li {
       justify-content: center;
       box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0 rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
       border-radius: 50%; }
-      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number1, .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number2, .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number3 {
+      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number1,
+      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number2,
+      .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner #number3 {
         font-weight: 600;
         color: black; }
       .about-clinic-section .about-clinic-body .about-right .counter-section .counter-area .item .skill .outer .inner .title_text {
@@ -608,7 +614,8 @@ li {
 
 .mri_details_section {
   padding-top: 5rem;
-  height: 900px; }
+  height: 900px;
+  overflow: hidden; }
   .mri_details_section .inner-bg::after {
     content: "";
     position: absolute;
@@ -739,7 +746,8 @@ li {
       border: none !important;
       background: none !important;
       color: white !important; }
-    .tabs-section .slider .slick-prev, .tabs-section .slider .slick-next {
+    .tabs-section .slider .slick-prev,
+    .tabs-section .slider .slick-next {
       position: absolute;
       bottom: -20%;
       padding-right: 2rem !important; }
@@ -953,12 +961,14 @@ li {
     display: none !important; }
   .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav {
     margin-top: 40px !important; }
-    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next {
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev,
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next {
       height: 40px;
       width: 40px;
       border-radius: 50%;
       background-color: #47ccc8; }
-      .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev span, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next span {
+      .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev span,
+      .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next span {
         display: none !important; }
     .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev::after {
       content: "➜";
@@ -977,9 +987,11 @@ li {
       padding: 1%;
       bottom: -9px;
       right: 45.5%; }
-    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover {
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover,
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover {
       background-color: #2d3663; }
-    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover::after, .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover::after {
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-prev:hover::after,
+    .testimonial .inner-bg .testimonial-slide-section .owl-theme .owl-nav .owl-next:hover::after {
       color: white !important; }
 
 .freecheckup {
@@ -1050,52 +1062,68 @@ li {
       .freecheckup .request form button:hover::after {
         color: white; }
 
-.medical_product, .article-section {
+.medical_product,
+.article-section {
   background-color: #edf3f6; }
-  .medical_product .title-area, .article-section .title-area {
+  .medical_product .title-area,
+  .article-section .title-area {
     text-align: center; }
-    .medical_product .title-area h5, .article-section .title-area h5 {
+    .medical_product .title-area h5,
+    .article-section .title-area h5 {
       color: #17f7ef;
       font-weight: 600; }
-    .medical_product .title-area h2, .article-section .title-area h2 {
+    .medical_product .title-area h2,
+    .article-section .title-area h2 {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: 700; }
-  .medical_product .article-area .card-area, .article-section .article-area .card-area {
+  .medical_product .article-area .card-area,
+  .article-section .article-area .card-area {
     display: flex; }
-  .medical_product .article-area .text-card, .article-section .article-area .text-card {
+  .medical_product .article-area .text-card,
+  .article-section .article-area .text-card {
     width: 100%; }
-    .medical_product .article-area .text-card .card-part, .article-section .article-area .text-card .card-part {
+    .medical_product .article-area .text-card .card-part,
+    .article-section .article-area .text-card .card-part {
       box-shadow: 0 0 20px #b3b3c4;
       padding: 2rem;
       margin-bottom: .5rem; }
-      .medical_product .article-area .text-card .card-part button, .article-section .article-area .text-card .card-part button {
+      .medical_product .article-area .text-card .card-part button,
+      .article-section .article-area .text-card .card-part button {
         width: 12em !important;
         color: white;
         font-size: 1.1rem;
         border: none; }
-      .medical_product .article-area .text-card .card-part .useable-button:hover, .article-section .article-area .text-card .card-part .useable-button:hover {
+      .medical_product .article-area .text-card .card-part .useable-button:hover,
+      .article-section .article-area .text-card .card-part .useable-button:hover {
         background-color: #17f7ef;
         color: #09219b; }
-      .medical_product .article-area .text-card .card-part .useable-button:hover::before, .article-section .article-area .text-card .card-part .useable-button:hover::before {
+      .medical_product .article-area .text-card .card-part .useable-button:hover::before,
+      .article-section .article-area .text-card .card-part .useable-button:hover::before {
         display: none; }
-      .medical_product .article-area .text-card .card-part h3, .article-section .article-area .text-card .card-part h3 {
+      .medical_product .article-area .text-card .card-part h3,
+      .article-section .article-area .text-card .card-part h3 {
         font-size: 1.4rem;
         font-weight: 600;
         font-family: sans-serif; }
-      .medical_product .article-area .text-card .card-part ul, .article-section .article-area .text-card .card-part ul {
+      .medical_product .article-area .text-card .card-part ul,
+      .article-section .article-area .text-card .card-part ul {
         padding-left: 0;
         justify-content: start; }
-      .medical_product .article-area .text-card .card-part ul i, .article-section .article-area .text-card .card-part ul i {
+      .medical_product .article-area .text-card .card-part ul i,
+      .article-section .article-area .text-card .card-part ul i {
         color: #17f7ef;
         padding-right: .1rem; }
-  .medical_product .article-area .double-card, .article-section .article-area .double-card {
+  .medical_product .article-area .double-card,
+  .article-section .article-area .double-card {
     width: 50%;
     margin: 2%; }
-    .medical_product .article-area .double-card #cardiology-card, .article-section .article-area .double-card #cardiology-card {
+    .medical_product .article-area .double-card #cardiology-card,
+    .article-section .article-area .double-card #cardiology-card {
       overflow: hidden;
       height: 550px;
       width: 100%; }
-    .medical_product .article-area .double-card #cardiology-card::after, .article-section .article-area .double-card #cardiology-card::after {
+    .medical_product .article-area .double-card #cardiology-card::after,
+    .article-section .article-area .double-card #cardiology-card::after {
       content: '';
       position: absolute;
       background-color: rgba(22, 13, 13, 0.5);
@@ -1104,19 +1132,24 @@ li {
       width: 100%;
       left: 0;
       z-index: 1; }
-    .medical_product .article-area .double-card #cardiology-card:hover::after, .article-section .article-area .double-card #cardiology-card:hover::after {
+    .medical_product .article-area .double-card #cardiology-card:hover::after,
+    .article-section .article-area .double-card #cardiology-card:hover::after {
       display: none; }
-    .medical_product .article-area .double-card #cardiology-card img, .article-section .article-area .double-card #cardiology-card img {
+    .medical_product .article-area .double-card #cardiology-card img,
+    .article-section .article-area .double-card #cardiology-card img {
       position: relative;
       height: 100%;
       transition: all 0.5s;
       width: 100%; }
-    .medical_product .article-area .double-card #cardiology-card:hover img, .article-section .article-area .double-card #cardiology-card:hover img {
+    .medical_product .article-area .double-card #cardiology-card:hover img,
+    .article-section .article-area .double-card #cardiology-card:hover img {
       transform: scale(1.05); }
-    .medical_product .article-area .double-card .c-item, .article-section .article-area .double-card .c-item {
+    .medical_product .article-area .double-card .c-item,
+    .article-section .article-area .double-card .c-item {
       position: relative;
       width: 100%; }
-      .medical_product .article-area .double-card .c-item .over-text, .article-section .article-area .double-card .c-item .over-text {
+      .medical_product .article-area .double-card .c-item .over-text,
+      .article-section .article-area .double-card .c-item .over-text {
         position: absolute;
         z-index: 999;
         top: 0;
@@ -1125,28 +1158,36 @@ li {
         justify-content: space-between;
         height: 100%;
         width: 100%; }
-      .medical_product .article-area .double-card .c-item .useable-button, .article-section .article-area .double-card .c-item .useable-button {
+      .medical_product .article-area .double-card .c-item .useable-button,
+      .article-section .article-area .double-card .c-item .useable-button {
         width: 35%;
         background-color: #17f7ef;
         border: none; }
-      .medical_product .article-area .double-card .c-item .useable-button:hover, .article-section .article-area .double-card .c-item .useable-button:hover {
+      .medical_product .article-area .double-card .c-item .useable-button:hover,
+      .article-section .article-area .double-card .c-item .useable-button:hover {
         color: white;
         position: relative;
         z-index: 999; }
-      .medical_product .article-area .double-card .c-item .useable-button:hover::before, .article-section .article-area .double-card .c-item .useable-button:hover::before {
+      .medical_product .article-area .double-card .c-item .useable-button:hover::before,
+      .article-section .article-area .double-card .c-item .useable-button:hover::before {
         background-color: #2d3663;
         z-index: -1; }
-      .medical_product .article-area .double-card .c-item .text-area, .article-section .article-area .double-card .c-item .text-area {
+      .medical_product .article-area .double-card .c-item .text-area,
+      .article-section .article-area .double-card .c-item .text-area {
         position: relative; }
-        .medical_product .article-area .double-card .c-item .text-area h3, .article-section .article-area .double-card .c-item .text-area h3 {
+        .medical_product .article-area .double-card .c-item .text-area h3,
+        .article-section .article-area .double-card .c-item .text-area h3 {
           color: white; }
-        .medical_product .article-area .double-card .c-item .text-area h3:hover, .article-section .article-area .double-card .c-item .text-area h3:hover {
+        .medical_product .article-area .double-card .c-item .text-area h3:hover,
+        .article-section .article-area .double-card .c-item .text-area h3:hover {
           color: #17f7ef;
           background-color: rgba(0, 0, 0, 0.3); }
-        .medical_product .article-area .double-card .c-item .text-area ul, .article-section .article-area .double-card .c-item .text-area ul {
+        .medical_product .article-area .double-card .c-item .text-area ul,
+        .article-section .article-area .double-card .c-item .text-area ul {
           padding-left: 0;
           justify-content: space-between; }
-        .medical_product .article-area .double-card .c-item .text-area i, .article-section .article-area .double-card .c-item .text-area i {
+        .medical_product .article-area .double-card .c-item .text-area i,
+        .article-section .article-area .double-card .c-item .text-area i {
           color: #17f7ef;
           padding-right: .4rem; }
 
@@ -1240,12 +1281,14 @@ li {
         color: #17f7ef; }
     .footer_area .footer_middle_row .outer .contact_footer {
       margin: auto; }
-      .footer_area .footer_middle_row .outer .contact_footer .useable-button:before, .footer_area .footer_middle_row .outer .contact_footer .btn {
+      .footer_area .footer_middle_row .outer .contact_footer .useable-button:before,
+      .footer_area .footer_middle_row .outer .contact_footer .btn {
         background-color: white;
         color: #2d3663; }
       .footer_area .footer_middle_row .outer .contact_footer i {
         color: black; }
-      .footer_area .footer_middle_row .outer .contact_footer .useable-button:hover:before, .footer_area .footer_middle_row .outer .contact_footer .btn:hover {
+      .footer_area .footer_middle_row .outer .contact_footer .useable-button:hover:before,
+      .footer_area .footer_middle_row .outer .contact_footer .btn:hover {
         background-color: #17f7ef !important; }
       .footer_area .footer_middle_row .outer .contact_footer .useable-button {
         font-size: 15px; }
@@ -1280,3 +1323,36 @@ li {
 .about_quality .quality-body {
   height: auto !important;
   position: relative; }
+
+.product_body {
+  height: auto; }
+  .product_body .parent_row {
+    grid-template-columns: 0.5fr 5fr 4fr 2.5fr;
+    align-items: start; }
+    .product_body .parent_row .filter-area {
+      grid-row: span 4;
+      position: sticky;
+      top: 0; }
+      .product_body .parent_row .filter-area .filter_with_price .slider .progress {
+        display: flex; }
+        .product_body .parent_row .filter-area .filter_with_price .slider .progress input {
+          top: 0;
+          display: flex; }
+      .product_body .parent_row .filter-area .filter_with_price .price-input {
+        display: flex; }
+        .product_body .parent_row .filter-area .filter_with_price .price-input .field {
+          display: flex; }
+          .product_body .parent_row .filter-area .filter_with_price .price-input .field input {
+            width: 100px;
+            -moz-appearance: none; }
+          .product_body .parent_row .filter-area .filter_with_price .price-input .field input[type=number] {
+            -moz-appearance: textfield; }
+          .product_body .parent_row .filter-area .filter_with_price .price-input .field input::-webkit-outer-spin-button,
+          .product_body .parent_row .filter-area .filter_with_price .price-input .field input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; }
+    .product_body .parent_row .item-5 {
+      grid-row: span 3;
+      grid-column: span 3; }
+      .product_body .parent_row .item-5 .product {
+        height: 200px; }

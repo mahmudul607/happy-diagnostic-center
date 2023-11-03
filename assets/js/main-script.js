@@ -53,7 +53,7 @@ function responsive(){
      
     
    });
-  }
+0  }
   else if (jQuery(window).width() >= 768){
     $(".slider").slick({
     
@@ -185,7 +185,7 @@ let map;
 
 async function initMap(map) {
   // The location of Uluru
-  const position = { lat: 23.80714091906524, lng: 90.40730777463807 };
+  const position = { lat: 23.874138298503535, lng: 90.39282216907367 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -284,4 +284,5 @@ roundCircleCounter('number3', 85);
 
 
 // .Circle 
+
 
